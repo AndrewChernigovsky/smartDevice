@@ -1,0 +1,124 @@
+// regular
+
+.f-regularOne {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: $white;
+
+    @media (max-width: $ds) {
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: $tb) {
+        font-size: 1.6rem;
+    }
+}
+
+.f-regularTwo {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: $white;
+
+    @media (max-width: $tb) {
+        font-size: 2rem;
+    }
+}
+
+.f-regularTwo.blue {
+    color: $basicBlue;
+}
+
+.f-regularThree {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $white;
+}
+
+.f-regularThree.gray {
+    color: $basicGray;
+}
+
+.f-regularFour {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: $white;
+
+    @media (max-width: $ds) {
+        font-size: 3.2rem;
+    }
+
+    @media (max-width: $tb) {
+        font-size: 2.8rem;
+    }
+}
+
+.f-regularFour.gray {
+    color: $basicGray;
+}
+
+.f-regularFive {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $white;
+}
+
+.f-regularSix {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $basicGray2;
+}
+
+.f-regularSeven {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $basicGray2;
+}
+
+.f-regularEight {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: $white;
+}
+// medium
+.f-mediumOne {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $basicGray3;
+}
+
+// bold
+.f-boldOne {
+    font-size: 8rem;
+    font-weight: 700;
+    color: $white;
+
+    @media (max-width: $ds) {
+        font-size: 6rem;
+    }
+
+    @media (max-width: $tb) {
+        font-size: 4rem;
+    }
+}
+
+.f-boldTwo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $white;
+}
+
+.f-boldTwo.gray {
+    color: $basicGray4;
+}
+
+.f-boldThree {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $white;
+}
+
+.f-boldFour {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $basicBlue;
+}
