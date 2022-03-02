@@ -1,17 +1,87 @@
 .header {
         background-color: $basicGray2;
         min-height: 478px;
+        background-image: url('../../img/content/main-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 110px;
 
-        &__wrapper{
+        &__wrapper {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 min-height: 120px;
+                margin-bottom: 100px;
         }
 
         &__inner {
                 display: flex;
                 align-items: center;
+        }
+
+        &__main {
+                display: flex;
+
+                h1 {
+                        font-size: 8rem;
+                        font-weight: 700;
+                        color: $white;
+
+                        @media (max-width: $ds) {
+                            font-size: 6rem;
+                        }
+
+                        @media (max-width: $tb) {
+                            font-size: 4rem;
+                        }
+                }
+
+                p {
+                        font-size: 2.2rem;
+                        font-weight: 400;
+                        color: $white;
+                        font-family: 'PT Mono';
+                        margin-left: 4rem;
+                        position: relative;
+                        max-width: 80%;
+
+                        &::before {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                width: 30px;
+                                height: 2px;
+                                background-color: $white;
+                                left: -35px;
+                                top: 11px;
+                        }
+
+                        @media (max-width: $ds) {
+                            font-size: 1.8rem;
+                        }
+
+                        @media (max-width: $tb) {
+                            font-size: 1.6rem;
+                        }
+                }
+
+                .btn-call button {
+                        background-color: $basicBlue;
+                        transition: 0.3s ease-in-out;
+                        margin-left: 4rem;
+
+                        &:hover {
+                                color: $basicBlue;
+                                background-color: $white;
+                                transition: 0.3s ease-in-out;
+                        }
+                }
+
+                &-image {
+
+                }
+
         }
 
 }

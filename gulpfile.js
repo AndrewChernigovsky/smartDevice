@@ -14,6 +14,7 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var cheerio = require('gulp-cheerio');
 var del = require("del");
 
 gulp.task("css", function () {
@@ -68,9 +69,14 @@ gulp.task("webp", function () {
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icons/*.svg")
+        .pipe(cheerio({
+                run: ($) => {
+                        $('[fill]').removeAttr('fill');
+                },
+        }))
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
