@@ -1,22 +1,22 @@
-.container {
-    max-width: $ds;
+.containerMedium {
+    max-width: $ds + 146px;
     min-width: $sm;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 
-    @media (min-width: $tb) {
-        padding: 0 20px;
+    @media (max-width: $tb) {
+        padding: 0 10px;
     }
 }
 
-.containerBike {
-  max-width: $ds + 186px;
+.containerBig {
+  max-width: $ds + 436px;
   min-width: $sm;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 
-  @media (min-width: $tb) {
-      padding: 0 20px;
+  @media (max-width: $tb) {
+      padding: 0 10px;
   }
 }
 
@@ -24,7 +24,7 @@ img {
     max-width: 100%;
     height: auto;
   }
-  
+
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -37,7 +37,7 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  
+
   .visually-hidden:not(:focus):not(:active),
   input[type="checkbox"] .visually-hidden,
   input[type="radio"].visually-hidden {
@@ -53,15 +53,14 @@ img {
     overflow: hidden;
   }
 
-.Mainpage-bike {
-    font-size: 10px;
-    line-height: 1.15; 
-    -webkit-text-size-adjust: 100%; 
-
-    &__body {
-        margin: 0;
-        font-family: "Open Sans", "Arial", sans-serif;
-    }
+.page {
+        font-size: 10px;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        &__body {
+                margin: 0;
+                font-family: "Open Sans", "Arial", sans-serif;
+        }
 }
 
 .link {

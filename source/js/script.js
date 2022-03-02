@@ -1,15 +1,16 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+// Form
+const anchors = document.querySelectorAll('a[href*="#"]')
 
-pageHeader.classList.remove('page-header--nojs');
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+    const blockID = anchor.getAttribute('href').substr(1)
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
