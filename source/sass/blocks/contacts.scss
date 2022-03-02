@@ -1,0 +1,60 @@
+.contacts {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: 'PT Mono';
+
+        a {
+                color: $white;
+                cursor: pointer;
+                margin-right: 2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                transition: 0.3s ease-in-out;
+                text-decoration: none;
+
+                svg {
+                        fill: $basicBlue;
+                }
+
+                &:hover {
+                        svg {
+                                fill: $white;
+                                transition: 0.3s ease-in-out;
+                        }
+
+                        p {
+                                color: $basicBlue;
+                                transition: 0.3s ease-in-out;
+                        }
+
+                }
+
+                &:focus {
+                        border: 1px solid $basicBlue;
+                }
+
+                &:visited {
+                        opacity: 0.8;
+                }
+        }
+}
+
+
+.email {
+
+        &__image-wrapper {
+                margin-right: 2rem;
+        }
+}
+
+.phone {
+        &__image-wrapper {
+                margin-right: 2rem;
+        }
+}
+
+.btn-call button {
+
+}

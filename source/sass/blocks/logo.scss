@@ -1,0 +1,30 @@
+.logo {
+        display: flex;
+        align-items: center;
+
+        cursor: default;
+
+        &__image-wrapper {
+        }
+
+        &__text {
+                margin-left: 1.6rem;
+
+                &-title {
+                        margin-bottom: -1rem;
+                        p {
+
+                        }
+                }
+
+                &-subtitle {
+                        p {
+
+                        }
+                }
+        }
+
+        svg {
+                fill: $basicBlue;
+        }
+}
