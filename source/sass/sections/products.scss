@@ -1,0 +1,23 @@
+.products {
+        background-color: $basicGray2;
+        min-height: 300px;
+
+        &__main-wrapper {
+
+        }
+
+        &__wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+        }
+
+        a {
+                margin-left: 20px;
+
+                &:first-of-type {
+                        margin-left: 0;
+                }
+        }
+
+}
