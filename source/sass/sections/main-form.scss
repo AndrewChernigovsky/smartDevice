@@ -1,17 +1,123 @@
 .main-form {
-    background-color: $basicBlue;
+        background-color: $basicBlue;
+        background-image: url("../img/content/form-bg.png");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
 
-    &__wrapper {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__form {
-        form {
-            display: grid;
+        &__wrapper {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
         }
-    }
+
+        &__form {
+                min-width: 45%;
+
+                h2 {
+                        font-size: 3.6rem;
+                        font-weight: 400;
+                        color: $white;
+                        font-family: "RobotoCondensed";
+
+                        @media (max-width: $ds) {
+                                font-size: 3.2rem;
+                        }
+
+                        @media (max-width: $tb) {
+                                font-size: 2.8rem;
+                        }
+                }
+
+                p,
+                input,
+                textarea {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        font-family: "PT Mono";
+                        color: $white;
+
+
+                }
+
+                input,
+                textarea {
+                        outline: none;
+
+                        &:hover {
+                                border: 1px solid $white;
+                        }
+
+                        &:focus {
+                                border: 1px solid $white;
+                        }
+
+                        &:active {
+                                border: 1px solid $white;
+                        }
+
+                        &::placeholder {
+                                color: $white;
+                        }
+                }
+
+
+
+                form {
+                        display: grid;
+
+                        textarea {
+                                background-color: $basicBlueSky;
+                                border: 1px solid transparent;
+                                margin-bottom: 45px;
+                                padding: 16px 14px;
+                        }
+
+                        button {
+                                background-color: transparent;
+                                transition: 0.3s ease-in-out;
+                                color: $white;
+                                padding: 14px 50px;
+                                border: 1px solid $white;
+                                border-radius: 5px;
+                                font-size: 1.4rem;
+                                font-weight: 700;
+                                font-family: 'RobotoCondensed';
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                cursor: pointer;
+
+                                &:hover {
+                                        color: $basicBlue;
+                                        background-color: $white;
+                                        border: 1px solid $basicBlue;
+                                        transition: 0.3s ease-in-out;
+                                }
+                        }
+                }
+        }
+
+        &__image-wrapper {
+        }
+
+        &__name-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                input {
+                        background-color: $basicBlueSky;
+                        border: 1px solid transparent;
+                        padding: 16px 14px;
+                }
+        }
+
+        &__accept-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        }
 }

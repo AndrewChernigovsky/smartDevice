@@ -94,7 +94,6 @@
                 a {
                         background-color: $white;
                         transition: 0.3s ease-in-out;
-                        color: $basicBlue;
                         padding: 14px 50px;
                         border: 1px solid $basicBlue;
                         border-radius: 5px;
@@ -104,6 +103,7 @@
                         font-family: 'RobotoCondensed';
                         text-transform: uppercase;
                         text-decoration: none;
+                        cursor: pointer;
 
                         &:hover {
                                 color: $white;

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="умные девайсы, Smart Device, умные технологии">
-        <title>Стартовый шаблон</title>
+        <title>Smart Device</title>
         <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -202,13 +202,21 @@
                                 <div class="main-form__form">
                                         <h2>Остались вопросы? Задайте их нам!</h2>
                                         <p>Мы проконсультируем Вас бесплатно</p>
-                                        <form action="" name="form">
-                                                <input type="text" id="name" placeholder="Имя">
-                                                <input type="tel" id="phone" placeholder="Телефон">
+                                        <form action="" name="form" id="form">
+                                                <div class="main-form__name-wrapper">
+                                                        <input type="text" id="name" placeholder="Имя">
+                                                        <input type="tel" id="phone" placeholder="Телефон">
+                                                </div>
+
+
                                                 <textarea name="faq" id="faq" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-                                                <button type="submit">Задать вопрос</button>
-                                                <label for="agree">Я согласен на обработку  персональных данных</label>
-                                                <input type="checkbox" name="agree" id="agree">
+
+                                                <div class="main-form__accept-wrapper">
+                                                        <button type="submit">Задать вопрос</button>
+                                                        <label for="agree">Я согласен на обработку  персональных данных
+                                                                <input class="vissually-hidden" type="checkbox" name="agree" id="agree">
+                                                        </label>
+                                                </div>
                                         </form>
                                 </div>
                         </div>
