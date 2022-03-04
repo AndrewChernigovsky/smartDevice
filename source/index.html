@@ -215,20 +215,17 @@
                                 <div class="main-form__form">
                                         <h2>Остались вопросы? Задайте их нам!</h2>
                                         <p>Мы проконсультируем Вас бесплатно</p>
-                                        <form action="" name="form" id="form">
+                                        <form action="https://echo.htmlacademy.ru/" name="form" id="form">
                                                 <div class="main-form__name-wrapper">
-                                                        <input type="text" id="name" placeholder="Имя">
-                                                        <input type="tel" id="phone" placeholder="Телефон">
+                                                        <input type="text" id="name" placeholder="Имя" name="name" aria-label="ваше имя">
+                                                        <input type="tel" id="phone" placeholder="Телефон" name="phone" aria-label="ваш телефон">
                                                 </div>
-
-
-                                                <textarea name="faq" id="faq" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                                                <textarea name="faq" id="faq" cols="30" rows="10" maxlength="200" minlength="30" placeholder="Ваш вопрос" aria-label="ваш вопрос"></textarea>
 
                                                 <div class="main-form__accept-wrapper">
-                                                        <button type="submit">Задать вопрос</button>
-                                                        <label for="agree">Я согласен на обработку  персональных данных
-                                                                <input class="vissually-hidden" type="checkbox" name="agree" id="agree">
-                                                        </label>
+                                                        <button type="submit" aria-labelledby="Задать вопрос">Задать вопрос</button>
+                                                        <input class="visually-hidden" type="checkbox" name="agree" id="agree" aria-label="согласен на обработку персональных данных" checked required>
+                                                        <label for="agree"><p>Я согласен на обработку  персональных данных</p></label>
                                                 </div>
                                         </form>
                                 </div>
@@ -236,7 +233,95 @@
                 </section>
         </main>
         <footer class="footer">
+                <div class="footer__wrapper containerMedium">
+                        <div class="footer__main">
+                                <div class="logo">
+                                        <div class="logo__image-wrapper">
+                                                <a href="#no__scroll">
+                                                        <svg role="img" width="52" height="52"
+                                                                aria-label="logotype">
+                                                                <use xlink:href="img/sprite.svg#logo"></use>
+                                                        </svg>
+                                                </a>
+                                        </div>
+                                        <div class="logo__text">
+                                                <div class="logo__text-title f-boldTwo">
+                                                        <p>Smart Device</p>
+                                                </div>
+                                                <div class="logo__text-subtitle f-mediumOne">
+                                                        <p>умные технологии</p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="social-contacts">
+                                        <a href="#no__scroll">
+                                                <svg role="img" width="27" height="27"
+                                                        aria-label="facebook">
+                                                        <use xlink:href="img/sprite.svg#facebook"></use>
+                                                </svg>
+                                        </a>
+                                        <a href="#no__scroll">
+                                                <svg role="img" width="27" height="27"
+                                                        aria-label="ok">
+                                                        <use xlink:href="img/sprite.svg#ok"></use>
+                                                </svg>
+                                        </a>
+                                        <a href="#no__scroll">
+                                                <svg role="img" width="27" height="27"
+                                                        aria-label="vk">
+                                                        <use xlink:href="img/sprite.svg#vk"></use>
+                                                </svg>
+                                        </a>
+                                </div>
 
+                                <div class="footer__nav-page">
+                                        <nav class="footer__nav footer__nav--nojs footer__nav--opened">
+                                                <h3>Разделы сайта</h3>
+                                                <ul class="footer__nav-list">
+                                                        <li>
+                                                                <a href="#">О компании</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#">Продукты</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#">Производство печатных плат</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#">Монтаж печатных плат</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#">Комплектующие</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#">Доставка</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#">Контакты</a>
+                                                        </li>
+                                                </ul>
+                                        </nav>
+                                </div>
+                                <div class="footer__contacts">
+                                        <span>
+                                                <a href="">г. Мытищи, Олимпийский проспект, д.10</a>
+                                        </span>
+                                        <span>
+                                                <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                                        </span>
+                                        <span>
+                                                <a href="tel:+79250038767">+7 (925) 003-87-67</a>
+                                        </span>
+                                        <span>
+                                                <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+                                        </span>
+                                </div>
+                        </div>
+
+                        <div class="footer__rigths">
+
+                        </div>
+                </div>
         </footer>
 </body>
 

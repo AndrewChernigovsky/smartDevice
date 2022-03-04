@@ -1,0 +1,35 @@
+.footer {
+        &__wrapper {
+                padding: 70px 0;
+
+                .logo {
+                        margin-bottom: 53px;
+                }
+
+                .logo__text-title {
+                        color: $basicGray4;
+                }
+        }
+
+        &__nav-page {
+
+        }
+
+        &__nav {
+
+        }
+}
+
+.footer__nav .footer__nav--nojs {
+
+}
+
+.footer__nav .footer__nav--opened {
+
+}
+
+.footer__nav .footer__nav--closed {
+        .footer__nav-list {
+                display: none;
+        }
+}

@@ -1,0 +1,23 @@
+.social-contacts {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        a {
+                margin-left: 15px;
+
+                &:first-child {
+                        margin-left: 0;
+                }
+
+                svg {
+                        fill: $basicGray6;
+                        transition: 0.3s ease-in-out;
+                }
+
+                &:hover svg {
+                        fill: $basicBlue;
+                        transition: 0.3s ease-in-out;
+                }
+        }
+}
