@@ -17,6 +17,26 @@
 
         &__nav {
 
+                h3 {
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        color: $basicGray2;
+                        font-family: 'RobotoCondensed';
+                        text-transform: uppercase;
+                }
+
+        }
+
+        &__nav-list {
+                list-style-type: none;
+
+                a {
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        color: $basicGray2;
+                        font-family: 'PT Mono';
+                        text-decoration: none;
+                }
         }
 }
 
