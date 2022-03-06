@@ -43,14 +43,26 @@
 
 
 .email {
-
         &__image-wrapper {
                 margin-right: 2rem;
         }
+
+        p {
+                @media (max-width: $ds) {
+                        display: none;
+                }
+        }
+
 }
 
 .phone {
         &__image-wrapper {
                 margin-right: 2rem;
+        }
+
+        p {
+                @media (max-width: $ds) {
+                        display: none;
+                }
         }
 }

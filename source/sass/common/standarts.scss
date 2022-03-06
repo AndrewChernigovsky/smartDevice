@@ -1,5 +1,5 @@
 .containerMedium {
-    max-width: $ds + 146px;
+    max-width: $ds;
     min-width: $sm;
     margin: 0 auto;
     padding: 0 20px;
@@ -10,7 +10,7 @@
 }
 
 .containerBig {
-  max-width: $ds + 436px;
+  max-width: $ds + 290px;
   min-width: $sm;
   margin: 0 auto;
   padding: 0 20px;
@@ -113,4 +113,8 @@ img {
   &:hover {
     opacity: .4;
   }
+}
+
+.none {
+        display: none;
 }

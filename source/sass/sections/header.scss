@@ -22,6 +22,10 @@
                 min-width: 665px;
                 justify-content: flex-start;
 
+                @media (max-width: $ds) {
+                        min-width: 200px;
+                }
+
                 div {
                         margin-left: 66px;
 
@@ -38,6 +42,10 @@
                         padding: 13px 28px;
                         margin-right: 5px;
                         letter-spacing: 0.5px;
+
+                        @media (max-width: $ds) {
+                                display: none;
+                        }
                 }
         }
 
@@ -117,12 +125,31 @@
         &__main-image {
                 min-width: 705px;
 
+                @media (max-width: $ds) {
+                        position: absolute;
+                        left: 89px;
+                }
+
                 .cards {
                         width: 705px;
                         height: 515px;
-                        margin-left: 70px;
+                        margin-left: 20px;
                         margin-top: 38px;
+
+                        @media (min-width: 1620px) {
+                                margin-left: 70px;
+                        }
+
+
                 }
         }
 
+        &__main-imageWrapper {
+                @media (max-width: $ds) {
+                        width: 600px;
+                        overflow: hidden;
+                        position: relative;
+
+                }
+        }
 }
