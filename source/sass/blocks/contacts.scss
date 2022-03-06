@@ -54,24 +54,3 @@
                 margin-right: 2rem;
         }
 }
-
-.btn-call button {
-        font-family: 'RobotoCondensed';
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: $white;
-        background: transparent;
-        border: 1px solid $white;
-        border-radius: 5px;
-        text-transform: uppercase;
-        padding: 12px 14px;
-        transition: 0.3s ease-in-out;
-        cursor: pointer;
-
-        &:hover {
-                color: $basicBlue;
-                transition: 0.3s ease-in-out;
-                border: 1px solid $basicBlue;
-                border-radius: 5px;
-        }
-}

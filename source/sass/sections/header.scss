@@ -19,15 +19,59 @@
         &__inner {
                 display: flex;
                 align-items: center;
+                min-width: 665px;
+                justify-content: flex-start;
+
+                div {
+                        margin-left: 66px;
+
+                        &:first-of-type {
+                                margin-left: 0;
+                        }
+
+                        &:last-of-type {
+                                margin-left: 31px;
+                        }
+                }
+
+                .btn-call button {
+                        padding: 13px 28px;
+                        margin-right: 5px;
+                        letter-spacing: 0.5px;
+                }
         }
 
         &__main {
                 display: flex;
 
+                .btn-call button {
+                        background-color: $basicBlue;
+                        transition: 0.3s ease-in-out;
+                        margin-left: 4rem;
+                        border: 1px solid transparent;
+                        margin-left: 97px;
+                        padding: 19px 45px;
+                        letter-spacing: 1.9px;
+
+                        &:hover {
+                                color: $basicBlue;
+                                background-color: $white;
+                                transition: 0.3s ease-in-out;
+                        }
+                }
+
+        }
+
+        &__main-text {
                 h1 {
-                        font-size: 8rem;
                         font-weight: 700;
                         color: $white;
+                        text-transform: uppercase;
+                        font-size: 7.8rem;
+                        margin-top: 97px;
+                        letter-spacing: 0.2px;
+                        margin-left: -1.5px;
+                        margin-bottom: 34px;
 
                         @media (max-width: $ds) {
                             font-size: 6rem;
@@ -43,19 +87,20 @@
                         font-weight: 400;
                         color: $white;
                         font-family: 'PT Mono';
-                        margin-left: 4rem;
                         position: relative;
-                        max-width: 80%;
+                        margin-left: 96px;
+                        line-height: 1.4;
+                        margin-bottom: 45px;
 
                         &::before {
                                 content: '';
                                 display: block;
                                 position: absolute;
-                                width: 30px;
-                                height: 2px;
                                 background-color: $white;
-                                left: -35px;
-                                top: 11px;
+                                width: 66px;
+                                height: 2px;
+                                left: -93px;
+                                top: 12px;
                         }
 
                         @media (max-width: $ds) {
@@ -67,22 +112,17 @@
                         }
                 }
 
-                .btn-call button {
-                        background-color: $basicBlue;
-                        transition: 0.3s ease-in-out;
-                        margin-left: 4rem;
+        }
 
-                        &:hover {
-                                color: $basicBlue;
-                                background-color: $white;
-                                transition: 0.3s ease-in-out;
-                        }
+        &__main-image {
+                min-width: 705px;
+
+                .cards {
+                        width: 705px;
+                        height: 515px;
+                        margin-left: 70px;
+                        margin-top: 38px;
                 }
-
-                &-image {
-
-                }
-
         }
 
 }
