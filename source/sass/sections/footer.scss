@@ -36,6 +36,74 @@
                         color: $basicGray2;
                         font-family: 'PT Mono';
                         text-decoration: none;
+                        transition: 0.3s ease-in-out;
+
+                        &:visited {
+                                color: $basicGray2;
+                        }
+
+                        &:hover {
+                                color: $basicBlue;
+                                transition: 0.3s ease-in-out;
+                        }
+
+                        &:focus {
+                                color: $basicBlue;
+                                outline: 1px solid $basicBlue;
+                        }
+
+                        &:active {
+                                color: $basicGray3;
+                        }
+                }
+        }
+
+        &__contacts {
+                display: grid;
+
+                h3 {
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        color: $basicGray2;
+                        font-family: 'RobotoCondensed';
+                        text-transform: uppercase;
+                }
+
+                a {
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        color: $basicGray2;
+                        font-family: 'PT Mono';
+                        text-decoration: none;
+
+
+                        &:visited {
+                                color: $basicGray2;
+                        }
+
+                        &:hover {
+                                color: $basicBlue;
+                                transition: 0.3s ease-in-out;
+                        }
+
+                        &:focus {
+                                color: $basicBlue;
+                                outline: 1px solid $basicBlue;
+                        }
+
+                        &:active {
+                                color: $basicGray3;
+                        }
+                }
+        }
+
+        &__rigths {
+                span {
+                        font-size: 1.3rem;
+                        font-weight: 400;
+                        color: $basicGray2;
+                        font-family: 'PT Mono';
+                        text-transform: uppercase;
                 }
         }
 }

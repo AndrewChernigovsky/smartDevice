@@ -20,6 +20,28 @@
   }
 }
 
+a {
+        transition: 0.3s ease-in-out;
+
+        &:visited {
+                color: $basicGray2;
+        }
+
+        &:hover {
+                color: $basicBlue;
+                transition: 0.3s ease-in-out;
+        }
+
+        &:focus {
+                color: $basicBlue;
+                outline: 1px solid $basicBlue;
+        }
+
+        &:active {
+                color: $basicGray3;
+        }
+}
+
 img {
     max-width: 100%;
     height: auto;
