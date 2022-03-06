@@ -45,6 +45,13 @@
 .email {
         &__image-wrapper {
                 margin-right: 2rem;
+
+                svg {
+                        @media (max-width: $ds) {
+                                width: 38.5px;
+                                height: 36px;
+                        }
+                }
         }
 
         p {
@@ -58,6 +65,13 @@
 .phone {
         &__image-wrapper {
                 margin-right: 2rem;
+
+                svg {
+                        @media (max-width: $ds) {
+                                width: 35px;
+                                height: 35px;
+                        }
+                }
         }
 
         p {

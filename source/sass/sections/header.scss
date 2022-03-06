@@ -24,6 +24,8 @@
 
                 @media (max-width: $ds) {
                         min-width: 200px;
+                        margin-top: -24px;
+                        margin-right: -55px;
                 }
 
                 div {
@@ -35,6 +37,10 @@
 
                         &:last-of-type {
                                 margin-left: 31px;
+
+                                @media (max-width: $ds) {
+                                        margin-left: 20px;
+                                }
                         }
                 }
 

@@ -3,6 +3,12 @@
         align-items: center;
         cursor: default;
 
+
+        @media (max-width: $ds) {
+                margin-top: -27px;
+                margin-left: 15px;
+        }
+
         &__text {
                 margin-left: 1.6rem;
 
@@ -14,6 +20,10 @@
                                 letter-spacing: -1.5px;
                                 margin-left: 2px;
                                 margin-bottom: -3px;
+
+                                @media (max-width: $ds) {
+                                        margin-left: 0;
+                                }
                         }
                 }
         }
