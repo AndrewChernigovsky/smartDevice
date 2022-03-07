@@ -41,6 +41,10 @@
                 @media (max-width: $ds) {
                     margin-left: 29px;
                 }
+
+                @media (max-width: $tb) {
+                    margin-left: 6px;
+                }
             }
 
             &:last-of-type {
@@ -67,6 +71,10 @@
     &__main {
         display: flex;
 
+        @media (max-width: $ds) {
+            position: relative;
+        }
+
         .btn-call button {
             background-color: $basicBlue;
             transition: 0.3s ease-in-out;
@@ -81,12 +89,19 @@
                 background-color: $white;
                 transition: 0.3s ease-in-out;
             }
+
+            @media (max-width: $ds) {
+                margin-left: 51px;
+                padding: 19px 31px;
+                margin-top: 11px;
+            }
         }
     }
 
     &__main-text {
         @media (max-width: $ds) {
             margin-left: 68px;
+            max-width: 60%;
         }
 
         h1 {
@@ -129,24 +144,38 @@
                 height: 2px;
                 left: -93px;
                 top: 12px;
+
+                @media (max-width: $ds) {
+                    width: 33px;
+                    left: -48px;
+                }
             }
 
             @media (max-width: $ds) {
                 font-size: 1.8rem;
+                margin-left: 51px;
+                min-width: 380px;
             }
 
             @media (max-width: $tb) {
                 font-size: 1.6rem;
+                min-width: 140px;
             }
         }
     }
 
     &__main-image {
         min-width: 705px;
+        position: absolute;
 
         @media (max-width: $ds) {
             position: absolute;
             left: 89px;
+        }
+
+        @media (max-width: $tb) {
+            position: absolute;
+            min-width: 200px;
         }
 
         .cards {
@@ -155,17 +184,40 @@
             margin-left: 20px;
             margin-top: 38px;
 
-            @media (min-width: 1620px) {
-                margin-left: 70px;
+            @media (min-width: 1760px) {
+                margin-left: -19px;
+            }
+
+            @media (max-width: $ds) {
+                width: 557px;
+                height: 405px;
+                margin-left: 33px;
+                margin-top: 39px;
             }
         }
     }
 
     &__main-imageWrapper {
+        position: relative;
+        width: 705px;
+        height: 500px;
+
         @media (max-width: $ds) {
-            width: 600px;
             overflow: hidden;
-            position: relative;
+            position: absolute;
+            width: 445px;
+            height: 500px;
+            right: 0;
+            top: -156px;
+        }
+
+        .cards-bg {
+            position: absolute;
+            min-width: 712px;
+            height: 517px;
+            z-index: 0;
+            top: 36px;
+            left: -23px;
         }
     }
 }
