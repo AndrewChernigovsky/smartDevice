@@ -57,6 +57,11 @@
 
         &__image-wrapper {
                 margin-right: 2rem;
+                margin-top: 10px;
+
+                @media (max-width: $ds) {
+                    margin-top: 0;
+                }
 
                 svg {
                         @media (max-width: $ds) {
@@ -77,7 +82,7 @@
 
 .phone {
         &__image-wrapper {
-                margin-right: 2rem;
+                margin-right: 11px;
 
                 svg {
                         @media (max-width: $ds) {
