@@ -1,4 +1,8 @@
 .contacts {
+        @media (max-width: $ds) {
+                max-width: 100px;
+        }
+
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -13,6 +17,10 @@
                 align-items: center;
                 transition: 0.3s ease-in-out;
                 text-decoration: none;
+
+                @media (max-width: $ds) {
+                        width: 50px;
+                }
 
                 svg {
                         fill: $basicBlue;
@@ -43,13 +51,18 @@
 
 
 .email {
+        @media (max-width: $ds) {
+                width: 50px;
+        }
+
         &__image-wrapper {
                 margin-right: 2rem;
 
                 svg {
                         @media (max-width: $ds) {
-                                width: 38.5px;
-                                height: 36px;
+                                margin-top: 10px;
+                                height: 30px;
+                                margin-left: -3px;
                         }
                 }
         }

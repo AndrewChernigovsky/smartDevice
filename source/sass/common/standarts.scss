@@ -10,66 +10,66 @@
 }
 
 .containerBig {
-  max-width: $ds + 290px;
-  min-width: $sm;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: $ds + 290px;
+    min-width: $sm;
+    margin: 0 auto;
+    padding: 0 20px;
 
-  @media (max-width: $tb) {
-      padding: 0 10px;
-  }
+    @media (max-width: $tb) {
+        padding: 0 10px;
+    }
 }
 
 .btn-call button {
-        font-family: 'RobotoCondensed';
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: $white;
-        background: transparent;
-        border: 1px solid $white;
-        border-radius: 5px;
-        text-transform: uppercase;
-        padding: 12px 14px;
-        transition: 0.3s ease-in-out;
-        cursor: pointer;
+    font-family: "RobotoCondensed";
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 12px 14px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 
-        &:hover {
-                color: $basicBlue;
-                transition: 0.3s ease-in-out;
-                border: 1px solid $basicBlue;
-                border-radius: 5px;
-        }
+    &:hover {
+        color: $basicBlue;
+        transition: 0.3s ease-in-out;
+        border: 1px solid $basicBlue;
+        border-radius: 5px;
+    }
 }
 
 a {
+    transition: 0.3s ease-in-out;
+
+    &:visited {
+        color: $basicGray2;
+    }
+
+    &:hover {
+        color: $basicBlue;
         transition: 0.3s ease-in-out;
+    }
 
-        &:visited {
-                color: $basicGray2;
-        }
+    &:focus {
+        color: $basicBlue;
+        outline: 1px solid $basicBlue;
+    }
 
-        &:hover {
-                color: $basicBlue;
-                transition: 0.3s ease-in-out;
-        }
-
-        &:focus {
-                color: $basicBlue;
-                outline: 1px solid $basicBlue;
-        }
-
-        &:active {
-                color: $basicGray3;
-        }
+    &:active {
+        color: $basicGray3;
+    }
 }
 
 img {
     max-width: 100%;
     height: auto;
     flex: none;
-  }
+}
 
-  .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -80,11 +80,11 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
-  .visually-hidden:not(:focus):not(:active),
-  input[type="checkbox"] .visually-hidden,
-  input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"] .visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -95,26 +95,26 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 .page {
-        font-size: 10px;
-        line-height: 1.15;
-        -webkit-text-size-adjust: 100%;
-        &__body {
-                margin: 0;
-                font-family: "Roboto", "RobotoCondensed", "PT Mono", "Arial", sans-serif;
-        }
+    font-size: 10px;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    &__body {
+        margin: 0;
+        font-family: "Roboto", "RobotoCondensed", "PT Mono", "Arial", sans-serif;
+    }
 }
 
 .link {
-  text-decoration: none;
-  cursor: pointer;
-  &:hover {
-    opacity: .4;
-  }
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.4;
+    }
 }
 
 .none {
-        display: none;
+    display: none;
 }

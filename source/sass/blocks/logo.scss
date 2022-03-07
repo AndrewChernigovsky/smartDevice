@@ -1,34 +1,33 @@
 .logo {
-        display: flex;
-        align-items: center;
-        cursor: default;
+    display: flex;
+    align-items: center;
+    cursor: default;
 
+    @media (max-width: $ds) {
+        margin-top: -27px;
+        margin-left: 5px;
+    }
 
-        @media (max-width: $ds) {
-                margin-top: -27px;
-                margin-left: 15px;
-        }
+    &__text {
+        margin-left: 1.6rem;
 
-        &__text {
-                margin-left: 1.6rem;
+        &-title {
+            margin-bottom: -1rem;
 
-                &-title {
-                        margin-bottom: -1rem;
+            p {
+                margin-top: 16px;
+                letter-spacing: -1.5px;
+                margin-left: 2px;
+                margin-bottom: -3px;
 
-                        p {
-                                margin-top: 16px;
-                                letter-spacing: -1.5px;
-                                margin-left: 2px;
-                                margin-bottom: -3px;
-
-                                @media (max-width: $ds) {
-                                        margin-left: 0;
-                                }
-                        }
+                @media (max-width: $ds) {
+                    margin-left: 0;
                 }
+            }
         }
+    }
 
-        svg {
-                fill: $basicBlue;
-        }
+    svg {
+        fill: $basicBlue;
+    }
 }
