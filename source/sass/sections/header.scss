@@ -8,6 +8,15 @@
     padding-bottom: 158px;
     margin-bottom: 50px;
 
+    @media (max-width: $ds) {
+        padding-bottom: 163px;
+    }
+
+    @media (max-width: $tb) {
+        padding-bottom: 120px;
+        margin-bottom: 33px;
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
