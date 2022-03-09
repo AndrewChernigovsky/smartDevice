@@ -2,10 +2,11 @@
 
         &__wrapper {
                 padding: 70px 0;
+                padding-bottom: 50px;
                 border-bottom: 1px solid $basicGray1;
 
                 .logo {
-                        margin-bottom: 53px;
+                        margin-bottom: 43px;
                 }
 
                 .logo__text-title {
@@ -21,7 +22,14 @@
 
         &__logo-contacts {
                 display: grid;
-                justify-items: center;
+                justify-items:  flex-start;
+                margin-top: -15px;
+                min-width: max-content;
+        }
+
+        &__nav-page {
+                margin-top: -19px;
+                margin-left: 95px;
         }
 
         &__nav {
@@ -32,6 +40,8 @@
                         color: $basicGray2;
                         font-family: 'RobotoCondensed';
                         text-transform: uppercase;
+                        margin-bottom: 26px;
+                        letter-spacing: 1px;
                 }
 
         }
@@ -44,6 +54,8 @@
                 column-gap: 75px;
                 grid-auto-flow: column;
                 grid-template-rows: repeat(4, 1fr);
+                row-gap: 8px;
+                min-width: max-content;
 
                 a {
                         font-size: 1.5rem;
@@ -75,6 +87,8 @@
 
         &__contacts {
                 display: grid;
+                margin-right: 4px;
+                margin-top: -19px;
 
                 h3 {
                         font-size: 1.5rem;
@@ -82,6 +96,8 @@
                         color: $basicGray2;
                         font-family: 'RobotoCondensed';
                         text-transform: uppercase;
+                        letter-spacing: 1px;
+                        margin-bottom: 26px;
                 }
 
                 a {
@@ -116,7 +132,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 20px 0;
+                padding: 20px 26px;
 
                 span {
                         font-size: 1.3rem;
@@ -125,6 +141,11 @@
                         font-family: 'PT Mono';
                         text-transform: uppercase;
                 }
+        }
+
+        &__contacts-wrapper {
+                display: grid;
+                gap: 8px;
         }
 }
 
