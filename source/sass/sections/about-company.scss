@@ -8,6 +8,10 @@
         padding-bottom: 82px;
     }
 
+    @media (max-width: $tb) {
+        padding-bottom: 78px;
+    }
+
     &__blocks-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -9,6 +9,11 @@
 
         @media (max-width: $ds) {
             padding-top: 27px;
+            padding-bottom: 79px;
+        }
+
+        @media (max-width: $tb) {
+            padding-bottom: 65px;
         }
 
         h2 {
@@ -27,6 +32,9 @@
 
             @media (max-width: $tb) {
                 font-size: 2.8rem;
+                max-width: 100%;
+                line-height: 1.4;
+                margin-bottom: 42px;
             }
         }
     }
@@ -38,9 +46,18 @@
         min-width: 100%;
 
         @media (max-width: $ds) {
-            flex-wrap: wrap;
+            display: grid;
+            justify-content: stretch;
+            gap: 46px;
+            margin-left: -10px;
+            margin-top: -4px;
         }
 
+        @media (max-width: $tb) {
+            gap: 31px;
+            padding-right: 5px;
+            margin-left: -22px;
+        }
     }
 
     &__block {
@@ -52,6 +69,16 @@
         background-color: $basicGray2;
         width: 371px;
         height: 625px;
+
+        @media (max-width: $ds) {
+            width: 100%;
+            height: 256px;
+            background-size: cover;
+        }
+
+        @media (max-width: $tb) {
+            height: 256px;
+        }
 
         &:hover {
             outline: 1px solid $basicBlue;
@@ -71,6 +98,10 @@
             width: 63px;
             height: 63px;
             z-index: 2;
+
+            @media (max-width: $ds) {
+                bottom: -2px;
+            }
         }
 
         h3 {
@@ -84,14 +115,60 @@
             margin-top: 53px;
             max-width: 44%;
             line-height: 1.4;
+
+
+            @media (max-width: $ds) {
+                margin-left: 44px;
+                margin-top: 42px;
+                max-width: 21%;
+                text-align: left;
+                word-break: break-word;
+            }
+
+
+            @media (max-width: $tb) {
+                margin-left: 35px;
+                margin-top: 23px;
+                max-width: 55%;
+                word-break: normal;
+            }
         }
     }
 
     a {
         margin-left: 29px;
 
+        @media (max-width: $ds) {
+            margin-left: 0;
+        }
+
         &:first-of-type {
             margin-left: 0;
+
+            &::before {
+                @media (max-width: $ds) {
+                    bottom: -2px;
+                    right: 6px;
+                }
+
+                @media (max-width: $tb) {
+                    bottom: -4px;
+                    right: -1px;
+                }
+            }
+        }
+
+        &:last-of-type {
+
+            h3 {
+                @media (max-width: $ds) {
+                    margin-top: 52px;
+                }
+
+                @media (max-width: $tb) {
+                    margin-top: 31px;
+                }
+            }
         }
     }
 }
@@ -99,12 +176,36 @@
 
 .block-1 {
     background-image: url('../img/content/product1.png');
+
+    @media (max-width: $ds) {
+        background-image: url('../img/content/product1-tb.png');
+    }
+
+    @media (max-width: $tb) {
+        background-image: url('../img/content/product1-mb.png');
+    }
 }
 
 .block-2 {
     background-image: url('../img/content/product2.png');
+
+    @media (max-width: $ds) {
+        background-image: url('../img/content/product2-tb.png');
+    }
+
+    @media (max-width: $tb) {
+        background-image: url('../img/content/product2-mb.png');
+    }
 }
 
 .block-3 {
     background-image: url('../img/content/product3.png');
+
+    @media (max-width: $ds) {
+        background-image: url('../img/content/product3-tb.png');
+    }
+
+    @media (max-width: $tb) {
+        background-image: url('../img/content/product3-mb.png');
+    }
 }

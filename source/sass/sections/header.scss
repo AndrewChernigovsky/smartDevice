@@ -51,7 +51,7 @@
                 }
 
                 @media (max-width: $tb) {
-                    margin-left: 56px;
+                    margin-left: 53px;
                     margin-top: -8px;
                 }
             }
@@ -65,7 +65,7 @@
                 }
 
                 @media (max-width: $tb) {
-                    margin-left: 6px;
+                    margin-left: 0;
                 }
             }
         }
@@ -126,9 +126,9 @@
                 }
 
                 padding: 19px 14px;
-                min-width: 295px;
-                margin: 0 auto;
-                margin-top: -5px;
+                min-width: 287px;
+                margin: -5px auto 0;
+                margin-left: 8px;
             }
         }
     }

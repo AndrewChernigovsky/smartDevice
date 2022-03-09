@@ -1,100 +1,109 @@
 .contacts {
-        @media (max-width: $ds) {
-                max-width: 100px;
-        }
+    @media (max-width: $ds) {
+        max-width: 100px;
+    }
 
+    @media (max-width: $tb) {
+        max-width: 107px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "PT Mono";
+
+    a {
+        color: $white;
+        cursor: pointer;
+        margin-right: 2rem;
         display: flex;
-        align-items: center;
         justify-content: flex-start;
-        font-family: 'PT Mono';
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        text-decoration: none;
 
-        a {
-                color: $white;
-                cursor: pointer;
-                margin-right: 2rem;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                transition: 0.3s ease-in-out;
-                text-decoration: none;
-
-                @media (max-width: $ds) {
-                        width: 50px;
-                }
-
-                svg {
-                        fill: $basicBlue;
-                }
-
-                &:hover {
-                        svg {
-                                fill: $white;
-                                transition: 0.3s ease-in-out;
-                        }
-
-                        p {
-                                color: $basicBlue;
-                                transition: 0.3s ease-in-out;
-                        }
-
-                }
-
-                &:focus {
-                        border: 1px solid $basicBlue;
-                }
-
-                &:visited {
-                        opacity: 0.8;
-                }
+        @media (max-width: $ds) {
+            width: 50px;
         }
+
+        svg {
+            fill: $basicBlue;
+        }
+
+        &:hover {
+            svg {
+                fill: $white;
+                transition: 0.3s ease-in-out;
+            }
+
+            p {
+                color: $basicBlue;
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        &:focus {
+            border: 1px solid $basicBlue;
+        }
+
+        &:visited {
+            opacity: 0.8;
+        }
+    }
 }
 
-
 .email {
+    @media (max-width: $ds) {
+        width: 50px;
+    }
+
+    &__image-wrapper {
+        margin-right: 2rem;
+        margin-top: 10px;
+
         @media (max-width: $ds) {
-                width: 50px;
+            margin-top: 0;
         }
 
-        &__image-wrapper {
-                margin-right: 2rem;
+        svg {
+            @media (max-width: $ds) {
                 margin-top: 10px;
+                height: 30px;
+                margin-left: -3px;
+            }
 
-                @media (max-width: $ds) {
-                    margin-top: 0;
-                }
-
-                svg {
-                        @media (max-width: $ds) {
-                                margin-top: 10px;
-                                height: 30px;
-                                margin-left: -3px;
-                        }
-                }
+            @media (max-width: $tb) {
+                margin-left: 7px;
+            }
         }
+    }
 
-        p {
-                @media (max-width: $ds) {
-                        display: none;
-                }
+    p {
+        @media (max-width: $ds) {
+            display: none;
         }
-
+    }
 }
 
 .phone {
-        &__image-wrapper {
-                margin-right: 11px;
+    &__image-wrapper {
+        margin-right: 11px;
 
-                svg {
-                        @media (max-width: $ds) {
-                                width: 35px;
-                                height: 35px;
-                        }
-                }
-        }
+        svg {
+            @media (max-width: $ds) {
+                width: 35px;
+                height: 35px;
+            }
 
-        p {
-                @media (max-width: $ds) {
-                        display: none;
-                }
+            @media (max-width: $tb) {
+                margin-left: 13px;
+            }
         }
+    }
+
+    p {
+        @media (max-width: $ds) {
+            display: none;
+        }
+    }
 }
