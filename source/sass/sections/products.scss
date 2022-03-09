@@ -7,6 +7,10 @@
         padding-bottom: 125px;
         padding-left: 35px;
 
+        @media (max-width: $ds) {
+            padding-top: 27px;
+        }
+
         h2 {
             font-size: 3.6rem;
             font-weight: 400;
@@ -16,6 +20,9 @@
 
             @media (max-width: $ds) {
                 font-size: 3.2rem;
+                margin-left: -10px;
+                max-width: 86%;
+                line-height: 1.3;
             }
 
             @media (max-width: $tb) {
@@ -28,17 +35,26 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        min-width: 100%;
+
+        @media (max-width: $ds) {
+            flex-wrap: wrap;
+        }
+
     }
 
     &__block {
         position: relative;
-        min-width: 100%;
-        transition: 0.3s ease;
         border: 1px solid transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: $basicGray2;
+        width: 371px;
+        height: 625px;
 
         &:hover {
-            border: 1px solid $white;
-            transition: 0.3s ease;
+            outline: 1px solid $basicBlue;
         }
 
         &::before {
@@ -66,16 +82,29 @@
             z-index: 4;
             margin-left: 41px;
             margin-top: 53px;
-            padding-right: 160px;
+            max-width: 44%;
             line-height: 1.4;
         }
     }
 
     a {
-        margin-left: 28px;
+        margin-left: 29px;
 
         &:first-of-type {
             margin-left: 0;
         }
     }
+}
+
+
+.block-1 {
+    background-image: url('../img/content/product1.png');
+}
+
+.block-2 {
+    background-image: url('../img/content/product2.png');
+}
+
+.block-3 {
+    background-image: url('../img/content/product3.png');
 }

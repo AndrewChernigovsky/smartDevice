@@ -5,6 +5,7 @@
 
     @media (max-width: $ds) {
         padding-top: 4px;
+        padding-bottom: 82px;
     }
 
     &__blocks-wrapper {
@@ -23,6 +24,13 @@
         @media (max-width: $tb) {
             grid-template-columns: 1fr;
             gap: 19px;
+        }
+
+        a {
+            display: block;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-decoration: none;
         }
     }
 

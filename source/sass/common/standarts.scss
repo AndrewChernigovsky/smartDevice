@@ -43,6 +43,7 @@
 
 a {
     transition: 0.3s ease-in-out;
+    transform: translateZ(0);
 
     &:visited {
         color: $basicGray2;
