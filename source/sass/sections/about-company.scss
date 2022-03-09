@@ -1,7 +1,7 @@
 .about-company {
     position: relative;
     padding-top: 56px;
-    padding-bottom: 110px;
+    padding-bottom: 102px;
 
     @media (max-width: $ds) {
         padding-top: 4px;
@@ -251,6 +251,10 @@
                 @media (max-width: $ds) {
                     margin-bottom: 60px;
                 }
+
+                @media (max-width: $tb) {
+                    margin-bottom: 43px;
+                }
             }
         }
     }
@@ -279,7 +283,7 @@
 
 .p-2 {
     display: none;
-    
+
     @media (max-width: $ds) {
         display: block;
     }
