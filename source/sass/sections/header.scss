@@ -17,6 +17,14 @@
         margin-bottom: 33px;
     }
 
+    .logo {
+        &__text {
+            @media (max-width: $tb) {
+                display: none;
+            }
+        }
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;

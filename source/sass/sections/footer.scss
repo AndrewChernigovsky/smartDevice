@@ -14,6 +14,12 @@
             @media (max-width: $ds) {
                 margin-top: -45px;
             }
+
+            @media (max-width: $tb) {
+                margin-top: -52px;
+                margin-bottom: 4px;
+                margin-left: 27px;
+            }
         }
 
         .logo__text-title {
@@ -22,8 +28,19 @@
     }
 
     &__wrappers {
+        min-width: 76.8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        @media (max-width: $ds) {
+                min-width: 100%;
+        }
+
         @media (max-width: $tb) {
-            margin: 0 auto;
+                margin: 0 auto;
+                flex-wrap: wrap;
+
         }
     }
 
@@ -34,8 +51,14 @@
         min-width: 70%;
 
         @media (max-width: $tb) {
-            min-width: 50%;
-            max-width: 50%;
+                min-width: 100%;
+                padding-right: 12px;
+                padding-top: 3px;
+                padding-left: 4px;
+        }
+
+        &:first-child {
+                margin-bottom: -9px;
         }
 
         button {
@@ -65,11 +88,11 @@
                 }
 
                 &::before {
-                    transform: rotate(45deg);
+                    transform: rotate(0deg);
                 }
 
                 &::after {
-                    transform: rotate(-45deg);
+                    transform: rotate(-90deg);
                 }
             }
         }
@@ -96,13 +119,6 @@
             justify-content: space-between;
             align-items: center;
             min-width: 100%;
-        }
-
-        @media (max-width: $tb) {
-            display: grid;
-            min-height: 247px;
-            justify-content: center;
-            margin-top: -33px;
 
             span {
                 font-size: 1.4rem;
@@ -113,12 +129,31 @@
                 color: $basicGray7;
                 font-family: "PT Mono";
                 text-transform: uppercase;
-                display: block;
             }
+        }
+
+        @media (max-width: $tb) {
+                display: grid;
+                min-height: 223px;
+                justify-content: center;
+                margin: 0 auto;
+                margin-top: -15px;
+                min-width: 100%;
         }
 
         span {
             display: none;
+
+            @media (max-width: $ds) {
+                    display: block;
+                    padding-right: 0;
+            }
+
+            
+            @media (max-width: $tb) {
+                display: block;
+                padding-right: 8px;
+        }
         }
     }
 
@@ -143,7 +178,7 @@
         }
 
         @media (max-width: $tb) {
-            min-width: 80%;
+            min-width: 100%;
             margin-left: 0;
         }
     }
@@ -154,6 +189,8 @@
             display: flex;
             flex-direction: column;
             align-items: baseline;
+            margin: 0 auto;
+                min-width: 80%;
         }
 
         h3 {
@@ -236,7 +273,7 @@
         @media (max-width: $tb) {
             margin: 0 auto;
             line-height: 1.6;
-            min-width: 80%;
+            min-width: 100%;
         }
 
         h3 {
@@ -246,7 +283,7 @@
             font-family: "RobotoCondensed";
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 26px;
+            margin-bottom: 36px;
         }
 
         a {
