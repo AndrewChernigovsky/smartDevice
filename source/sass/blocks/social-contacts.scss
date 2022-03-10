@@ -3,6 +3,10 @@
         align-items: center;
         justify-content: flex-start;
 
+        @media (max-width: $ds) {
+            margin-top: -90px;
+        }
+
         a {
                 margin-left: 16px;
 

@@ -4,6 +4,10 @@
         padding-bottom: 50px;
         border-bottom: 1px solid $basicGray1;
 
+        @media (max-width: $ds) {
+            padding-bottom: 28px;
+        }
+
         .logo {
             margin-bottom: 43px;
 
@@ -14,6 +18,48 @@
 
         .logo__text-title {
             color: $basicGray4;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 100%;
+
+        button {
+            display: none;
+
+            @media (max-width: $tb) {
+                display: block;
+                cursor: pointer;
+                position: relative;
+                width: 20px;
+                height: 20px;
+                background: transparent;
+                border: none;
+                top: -4px;
+                left: 10px;
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 16px;
+                    height: 2px;
+                    top: 6px;
+                    left: 0px;
+                    background: $basicGray8;
+                }
+
+                &::before {
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
         }
     }
 
@@ -37,15 +83,52 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            min-width: 100%;
+        }
+
+        @media (max-width: $tb) {
+            span {
+                font-size: 1.4rem;
+                letter-spacing: -0.1px;
+                margin-top: -84px;
+                margin-left: 11px;
+                font-weight: 400;
+                color: $basicGray7;
+                font-family: "PT Mono";
+                text-transform: uppercase;
+                display: block;
+            }
+        }
+
+        span {
+            display: none;
         }
     }
 
     &__nav-page {
         margin-top: -19px;
         margin-left: 95px;
+
+        @media (max-width: $ds) {
+            margin-top: -6px;
+            margin-left: 6px;
+        }
+
+        @media (max-width: $tb) {
+            min-width: 80%;
+        }
     }
 
     &__nav {
+        @media (max-width: $tb) {
+            max-width: max-content;
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+
         h3 {
             font-size: 1.5rem;
             font-weight: 400;
@@ -54,6 +137,10 @@
             text-transform: uppercase;
             margin-bottom: 26px;
             letter-spacing: 1px;
+
+            @media (max-width: $ds) {
+                margin-bottom: 18px;
+            }
         }
     }
 
@@ -67,6 +154,12 @@
         grid-template-rows: repeat(4, 1fr);
         row-gap: 8px;
         min-width: max-content;
+
+        @media (max-width: $ds) {
+            grid-template-columns: 1fr;
+            grid-auto-flow: row;
+            grid-template-rows: auto;
+        }
 
         a {
             font-size: 1.5rem;
@@ -96,10 +189,29 @@
         }
     }
 
+    &__list-wrapper {
+        @media (max-width: $tb) {
+            justify-content: center;
+            display: flex;
+        }
+    }
+
     &__contacts {
         display: grid;
         margin-right: 4px;
         margin-top: -19px;
+
+        @media (max-width: $ds) {
+            margin-right: 14px;
+            margin-top: -6px;
+        }
+
+        @media (max-width: $tb) {
+            margin: 0 auto;
+            max-width: max-content;
+            padding: 0 30px;
+            line-height: 1.6;
+        }
 
         h3 {
             font-size: 1.5rem;
@@ -144,6 +256,10 @@
         align-items: center;
         padding: 20px 26px;
 
+        @media (max-width: $ds) {
+            padding: 26px 26px;
+        }
+
         span {
             letter-spacing: 0.4px;
         }
@@ -157,11 +273,21 @@
         span {
             margin-left: 74px;
 
+            @media (max-width: $ds) {
+                display: none;
+            }
+
             &:first-child {
                 margin-left: 0;
             }
+
             &:last-child {
                 margin-left: 145px;
+
+                @media (max-width: $ds) {
+                    display: block;
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -177,10 +303,20 @@
         }
     }
 
-
     &__contacts-wrapper {
         display: grid;
         gap: 8px;
+
+        @media (max-width: $tb) {
+            max-width: max-content;
+            margin: 0 auto;
+            justify-content: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
     }
 }
 
