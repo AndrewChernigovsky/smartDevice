@@ -21,11 +21,22 @@
         }
     }
 
+    &__wrappers {
+        @media (max-width: $tb) {
+            margin: 0 auto;
+        }
+    }
+
     &__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-width: 100%;
+        min-width: 70%;
+
+        @media (max-width: $tb) {
+            min-width: 50%;
+            max-width: 50%;
+        }
 
         button {
             display: none;
@@ -38,8 +49,9 @@
                 height: 20px;
                 background: transparent;
                 border: none;
-                top: -4px;
+                top: 0;
                 left: 10px;
+
 
                 &::before,
                 &::after {
@@ -87,6 +99,11 @@
         }
 
         @media (max-width: $tb) {
+            display: grid;
+            min-height: 247px;
+            justify-content: center;
+            margin-top: -33px;
+
             span {
                 font-size: 1.4rem;
                 letter-spacing: -0.1px;
@@ -105,6 +122,17 @@
         }
     }
 
+    .logo {
+        svg {
+            @media (max-width: $tb) {
+                width: 52px;
+                height: 52px;
+                margin-left: -7px;
+                margin-right: 4px;
+            }
+        }
+    }
+
     &__nav-page {
         margin-top: -19px;
         margin-left: 95px;
@@ -116,13 +144,12 @@
 
         @media (max-width: $tb) {
             min-width: 80%;
+            margin-left: 0;
         }
     }
 
     &__nav {
         @media (max-width: $tb) {
-            max-width: max-content;
-            margin: 0 auto;
             justify-content: center;
             display: flex;
             flex-direction: column;
@@ -208,9 +235,8 @@
 
         @media (max-width: $tb) {
             margin: 0 auto;
-            max-width: max-content;
-            padding: 0 30px;
             line-height: 1.6;
+            min-width: 80%;
         }
 
         h3 {
@@ -309,10 +335,7 @@
 
         @media (max-width: $tb) {
             max-width: max-content;
-            margin: 0 auto;
             justify-content: center;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
             flex-direction: column;
             align-items: baseline;
