@@ -6,6 +6,10 @@
 
         .logo {
             margin-bottom: 43px;
+
+            @media (max-width: $ds) {
+                margin-top: -45px;
+            }
         }
 
         .logo__text-title {
@@ -17,6 +21,10 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+
+        @media (max-width: $ds) {
+            flex-wrap: wrap;
+        }
     }
 
     &__logo-contacts {
@@ -24,6 +32,12 @@
         justify-items: flex-start;
         margin-top: -15px;
         min-width: max-content;
+
+        @media (max-width: $ds) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__nav-page {
