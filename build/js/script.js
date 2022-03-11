@@ -1,11 +1,12 @@
 'use strict';
 const footerNav = document.querySelector('.footer__nav')
-const footerNavNoJS = document.querySelector('footer__nav--nojs')
-const footerNavClosed = document.querySelector('footer__nav--closed')
-const footerNavOpened = document.querySelector('footer__nav--opened')
+const footerContacts = document.querySelector('.footer__contacts')
+
+const btnContactsFooter = document.getElementById('footerBtnContacts');
 const btnNavFooter = document.getElementById('footerBtnNav');
 
 footerNav.classList.remove('footer__nav--nojs')
+footerContacts.classList.remove('footer__contacts--nojs')
 
 btnNavFooter.addEventListener('click', ()=> {
   if (footerNav.classList.contains('footer__nav--closed')) {
@@ -15,6 +16,18 @@ btnNavFooter.addEventListener('click', ()=> {
   } else {
     footerNav.classList.remove('footer__nav--opened')
     footerNav.classList.add('footer__nav--closed')
+    console.log(2)
+  }
+})
+
+btnContactsFooter.addEventListener('click', ()=> {
+  if (footerContacts.classList.contains('footer__contacts--closed')) {
+    footerContacts.classList.add('footer__contacts--opened')
+    footerContacts.classList.remove('footer__contacts--closed')
+    console.log(1)
+  } else {
+    footerContacts.classList.remove('footer__contacts--opened')
+    footerContacts.classList.add('footer__contacts--closed')
     console.log(2)
   }
 })
