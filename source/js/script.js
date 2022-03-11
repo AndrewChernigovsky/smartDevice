@@ -12,11 +12,13 @@ btnNavFooter.addEventListener('click', ()=> {
   if (footerNav.classList.contains('footer__nav--closed')) {
     footerNav.classList.add('footer__nav--opened')
     footerNav.classList.remove('footer__nav--closed')
-    console.log(1)
   } else {
     footerNav.classList.remove('footer__nav--opened')
     footerNav.classList.add('footer__nav--closed')
-    console.log(2)
+  }
+  if (footerContacts.classList.contains('footer__nav--opened')) {
+    footerNav.classList.remove('footer__nav--opened')
+    footerNav.classList.add('footer__nav--closed')
   }
 })
 
@@ -24,11 +26,13 @@ btnContactsFooter.addEventListener('click', ()=> {
   if (footerContacts.classList.contains('footer__contacts--closed')) {
     footerContacts.classList.add('footer__contacts--opened')
     footerContacts.classList.remove('footer__contacts--closed')
-    console.log(1)
   } else {
     footerContacts.classList.remove('footer__contacts--opened')
     footerContacts.classList.add('footer__contacts--closed')
-    console.log(2)
+  }
+  if (footerNav.classList.contains('footer__nav--opened')) {
+      footerContacts.classList.remove('footer__contacts--closed')
+      footerContacts.classList.add('footer__contacts--closed')
   }
 })
 
