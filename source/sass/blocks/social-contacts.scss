@@ -1,32 +1,32 @@
 .social-contacts {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
-        @media (max-width: $ds) {
-            margin-top: -90px;
+    @media (max-width: $ds) {
+        margin-top: -90px;
+    }
+
+    @media (max-width: $tb) {
+        margin: 0 auto;
+        margin-top: -101px;
+    }
+
+    a {
+        margin-left: 16px;
+
+        &:first-child {
+            margin-left: 0;
         }
 
-        @media (max-width: $tb) {
-                margin: 0 auto;
-                margin-top: -101px;
+        svg {
+            fill: $basicGray6;
+            transition: 0.3s ease-in-out;
         }
-    
-        a {
-                margin-left: 16px;
 
-                &:first-child {
-                        margin-left: 0;
-                }
-
-                svg {
-                        fill: $basicGray6;
-                        transition: 0.3s ease-in-out;
-                }
-
-                &:hover svg {
-                        fill: $basicBlue;
-                        transition: 0.3s ease-in-out;
-                }
+        &:hover svg {
+            fill: $basicBlue;
+            transition: 0.3s ease-in-out;
         }
+    }
 }

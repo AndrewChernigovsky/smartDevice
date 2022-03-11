@@ -170,7 +170,7 @@
         }
 
         @media (max-width: $tb) {
-           display: none;
+            display: none;
         }
 
         img {
@@ -251,7 +251,6 @@
             }
 
             &:first-of-type {
-
                 @media (max-width: $tb) {
                     margin-bottom: 36px;
                 }
