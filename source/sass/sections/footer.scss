@@ -389,7 +389,7 @@
     }
 }
 
-.footer__nav .footer__nav--closed {
+.footer__nav--closed {
     @media (max-width: $tb) {
         justify-content: center;
         display: flex;
@@ -416,7 +416,7 @@
     }
 }
 
-.footer__nav .footer__nav--opened {
+.footer__nav--opened {
     @media (max-width: $tb) {
         justify-content: center;
         display: flex;

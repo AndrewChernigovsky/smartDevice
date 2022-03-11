@@ -1,20 +1,20 @@
 'use strict';
 const footerNav = document.querySelector('.footer__nav')
-const footerNavNoJS = document.querySelector('.footer__nav--nojs')
-const footerNavClosed = document.querySelector('.footer__nav--closed')
-const footerNavOpened = document.querySelector('.footer__nav--opened')
+const footerNavNoJS = document.querySelector('footer__nav--nojs')
+const footerNavClosed = document.querySelector('footer__nav--closed')
+const footerNavOpened = document.querySelector('footer__nav--opened')
 const btnNavFooter = document.getElementById('footerBtnNav');
 
-footerNav.classList.remove(footerNavNoJS)
+footerNav.classList.remove('footer__nav--nojs')
 
 btnNavFooter.addEventListener('click', ()=> {
-  if (footerNavClosed) {
-    footerNav.classList.add(footerNavOpened)
-    footerNav.remove(footerNavClosed)
+  if (footerNav.classList.contains('footer__nav--closed')) {
+    footerNav.classList.add('footer__nav--opened')
+    footerNav.classList.remove('footer__nav--closed')
     console.log(1)
   } else {
-    footerNav.remove(footerNavOpened)
-    footerNav.classList.add(footerNavClosed)
+    footerNav.classList.remove('footer__nav--opened')
+    footerNav.classList.add('footer__nav--closed')
     console.log(2)
   }
 })
