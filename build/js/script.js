@@ -40,7 +40,26 @@ btnContactsFooter.addEventListener('click', ()=> {
 
 // Form Popup
 const btnPopup = document.getElementById('callUs');
+const overflow = document.getElementById('overflow');
+const popupshow = document.querySelector('.mainformPopup-js');
+const popupform = document.querySelector('.mainformPopup');
 
+btnPopup.addEventListener('click', ()=> {
+    overflow.classList.add('overflow')
+    popupform.classList.add('mainformPopup-js');
+})
+
+overflow.addEventListener('click', ()=> {
+    popupform.classList.remove('mainformPopup-js');
+    overflow.classList.remove('overflow')
+})
+
+overflow.addEventListener('keypress', (e)=> {
+    if(e.key === 'Esc') {
+        popupform.classList.remove('mainformPopup-js')
+        overflow.classList.remove('overflow');
+    }
+})
 
 
 // anchors

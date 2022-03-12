@@ -1,8 +1,24 @@
 .mainformPopup {
+    display: none;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 100;
+
+    .main-form__form {
+        background-color: $basicBlue;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .main-form__accept-wrapper {
+        display: grid;
+        gap: 20px;
+    }
+}
+
+.mainformPopup-js {
+    display: block;
 }
 
 .overflow {

@@ -12,7 +12,7 @@
 </head>
 
 <body class="page__body">
-    <div class="overflow"></div>
+    <div id="overflow"></div>
     <header class="header">
         <div class="header__wrapper containerBig">
             <div class="logo">
@@ -65,16 +65,19 @@
                         <div class="main-form__form">
                             <h2>Закажите звонок</h2>
                             <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+                            <button type="button" class="visually-hidden">
+                                <span>Закрыть форму</span>
+                            </button>
                             <form action="https://echo.htmlacademy.ru/" name="form" id="form">
                                 <div class="main-form__name-wrapper">
-                                    <input type="text" id="name" placeholder="Имя" name="name" aria-label="ваше имя">
-                                    <input type="tel" id="phone" placeholder="Телефон" name="phone" aria-label="ваш телефон">
+                                    <input type="text" id="name" placeholder="Имя" name="name" aria-label="ваше имя" required>
+                                    <input type="tel" id="phone" placeholder="Телефон" name="phone" aria-label="ваш телефон" required>
                                 </div>
                                 <textarea name="faq" id="faq" cols="30" rows="7" maxlength="200" minlength="30"
                                     placeholder="Ваш вопрос" aria-label="ваш вопрос"></textarea>
 
                                 <div class="main-form__accept-wrapper">
-                                    <button type="submit" aria-labelledby="Задать вопрос">Задать вопрос</button>
+                                    <button type="submit" aria-labelledby="Задать вопрос">Отправить</button>
                                     <input class="visually-hidden" type="checkbox" name="agree" id="agree"
                                         aria-label="согласен на обработку персональных данных" checked required>
                                     <label for="agree">
@@ -266,7 +269,9 @@
                         <nav class="footer__nav--closed footer__nav footer__nav--nojs">
                             <div class="footer__title">
                                 <h3>Разделы сайта</h3>
-                                <button type="button" id="footerBtnNav"></button>
+                                <button type="button" id="footerBtnNav">
+                                    <span>Открыть список</span>
+                                </button>
                             </div>
                             <div class="footer__list-wrapper">
                                 <ul class="footer__nav-list">
@@ -298,7 +303,9 @@
                     <div class="footer__contacts footer__contacts--nojs footer__contacts--closed">
                         <div class="footer__title">
                             <h3>Наш офис</h3>
-                            <button type="button" id="footerBtnContacts"></button>
+                            <button type="button" id="footerBtnContacts">
+                                <span>Открыть список</span>
+                            </button>
                         </div>
 
                         <div class="footer__contacts-wrapper">
@@ -331,7 +338,7 @@
             <span>Developed by wow studio</span>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
