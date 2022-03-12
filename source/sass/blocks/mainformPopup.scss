@@ -1,0 +1,14 @@
+.mainformPopup {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+}
+
+.overflow {
+    background-color: $blackLight;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+}

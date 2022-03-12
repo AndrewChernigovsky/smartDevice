@@ -1,7 +1,6 @@
 'use strict';
 const footerNav = document.querySelector('.footer__nav')
 const footerContacts = document.querySelector('.footer__contacts')
-
 const btnContactsFooter = document.getElementById('footerBtnContacts');
 const btnNavFooter = document.getElementById('footerBtnNav');
 
@@ -39,9 +38,13 @@ btnContactsFooter.addEventListener('click', ()=> {
   }
 })
 
+// Form Popup
+const btnPopup = document.getElementById('callUs');
 
 
-// Form
+
+// anchors
+
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
