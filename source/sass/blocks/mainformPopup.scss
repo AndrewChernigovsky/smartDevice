@@ -2,18 +2,39 @@
     display: none;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -7px);
     z-index: 100;
+    margin-left: 86px;
 
     .main-form__form {
         background-color: $basicBlue;
         padding: 20px;
         padding-top: 0;
+        padding-bottom: 72px;
+        max-width: 67.6%;
+
+        h2 {
+            margin-top: 30px;
+            padding-top: 33px;
+            margin-bottom: -3px;
+            padding-left: 20px;
+            font-size: 2.8rem;
+        }
+
+        p {
+            line-height: 1.4;
+        }
     }
 
     .main-form__accept-wrapper {
         display: grid;
         gap: 20px;
+    }
+
+    .main-form__name-wrapper {
+        margin-bottom: 31px;
+        margin-top: 11px;
+        max-width: 92%;
     }
 }
 

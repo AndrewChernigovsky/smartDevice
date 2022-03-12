@@ -54,10 +54,10 @@ overflow.addEventListener('click', ()=> {
     overflow.classList.remove('overflow')
 })
 
-overflow.addEventListener('keypress', (e)=> {
-    if(e.key === 'Esc') {
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
         popupform.classList.remove('mainformPopup-js')
-        overflow.classList.remove('overflow');
+        overflow.classList.remove('overflow')
     }
 })
 

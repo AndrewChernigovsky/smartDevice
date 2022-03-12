@@ -58,7 +58,6 @@ document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         popupform.classList.remove('mainformPopup-js')
         overflow.classList.remove('overflow')
-        console.log(1)
     }
 })
 
