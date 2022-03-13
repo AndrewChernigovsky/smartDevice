@@ -43,16 +43,19 @@ const btnPopup = document.getElementById('callUs');
 const overflow = document.getElementById('overflow');
 const popupshow = document.querySelector('.mainformPopup-js');
 const popupform = document.querySelector('.mainformPopup');
+const popupformbtn = document.querySelector('.btnPop');
 
 btnPopup.addEventListener('click', ()=> {
     overflow.classList.add('overflow')
     popupform.classList.add('mainformPopup-js');
 })
 
-overflow.addEventListener('click', ()=> {
-    popupform.classList.remove('mainformPopup-js');
-    overflow.classList.remove('overflow')
-})
+function removePopup() {
+    popupform.classList.remove('mainformPopup-js')
+    overflow.classList.remove('overflow');
+}
+
+overflow.addEventListener('click', removePopup())
 
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
@@ -61,7 +64,7 @@ document.addEventListener('keydown', function (e) {
     }
 })
 
-
+popupformbtn.addEventListener('click', removePopup())
 // anchors
 
 const anchors = document.querySelectorAll('a[href*="#"]')
