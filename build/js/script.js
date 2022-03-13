@@ -44,18 +44,17 @@ const overflow = document.getElementById('overflow');
 const popupshow = document.querySelector('.mainformPopup-js');
 const popupform = document.querySelector('.mainformPopup');
 const popupformbtn = document.querySelector('.btnPop');
+const body = document.getElementsByTagName('body')[0];
 
 btnPopup.addEventListener('click', ()=> {
     overflow.classList.add('overflow')
     popupform.classList.add('mainformPopup-js');
 })
 
-function removePopup() {
-    popupform.classList.remove('mainformPopup-js')
-    overflow.classList.remove('overflow');
-}
-
-overflow.addEventListener('click', removePopup())
+overflow.addEventListener('click', ()=> {
+    popupform.classList.remove('mainformPopup-js');
+    overflow.classList.remove('overflow')
+})
 
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
@@ -64,7 +63,19 @@ document.addEventListener('keydown', function (e) {
     }
 })
 
-popupformbtn.addEventListener('click', removePopup())
+popupformbtn.addEventListener('click', ()=> {
+    popupform.classList.remove('mainformPopup-js')
+    overflow.classList.remove('overflow')
+})
+
+if(popupform.classList.contains('mainformPopup-js')) {
+
+    body.classList.add('overflow-hidden')
+    popupform.style.overflowY='scroll';
+} else {
+        body.classList.remove('overflow-hidden')
+        popupform.style.overflowY='hidden';
+    }
 // anchors
 
 const anchors = document.querySelectorAll('a[href*="#"]')

@@ -44,12 +44,12 @@ const overflow = document.getElementById('overflow');
 const popupshow = document.querySelector('.mainformPopup-js');
 const popupform = document.querySelector('.mainformPopup');
 const popupformbtn = document.querySelector('.btnPop');
+const body = document.getElementsByTagName('body')[0];
 
 btnPopup.addEventListener('click', ()=> {
     overflow.classList.add('overflow')
     popupform.classList.add('mainformPopup-js');
 })
-
 
 overflow.addEventListener('click', ()=> {
     popupform.classList.remove('mainformPopup-js');
@@ -67,6 +67,29 @@ popupformbtn.addEventListener('click', ()=> {
     popupform.classList.remove('mainformPopup-js')
     overflow.classList.remove('overflow')
 })
+
+if(popupform.classList.contains('mainformPopup-js')) {
+    body.classList.add('overflow-hidden')
+    popupform.style.overflowY='scroll';
+} else {
+        body.classList.remove('overflow-hidden')
+        popupform.style.overflowY='hidden';
+    }
+
+
+// if(navMain.classList.contains(mainNavOpened)) {
+// body.classList.add('overflow-hidden')
+// navList.style.overflowY='scroll';
+// } else {
+// body.classList.remove('overflow-hidden')
+// }
+
+// if(navMain.classList.contains('none')) {
+// body.classList.remove('overflow-hidden')
+// navList.style.overflowY='hidden';
+// }
+
+
 // anchors
 
 const anchors = document.querySelectorAll('a[href*="#"]')
