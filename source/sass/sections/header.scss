@@ -48,33 +48,29 @@
             margin-top: -24px;
         }
 
-        div {
-            margin-left: 66px;
+        div:first-of-type {
+            margin-left: 0;
 
-            &:first-of-type {
-                margin-left: 0;
-
-                @media (max-width: $ds) {
-                    margin-left: 29px;
-                }
-
-                @media (max-width: $tb) {
-                    margin-left: 22px;
-                    margin-top: -8px;
-                }
+            @media (max-width: $ds) {
+                margin-left: 29px;
             }
 
-            &:last-of-type {
-                margin-left: 31px;
+            @media (max-width: $tb) {
+                margin-left: 22px;
+                margin-top: -8px;
+            }
+        }
 
-                @media (max-width: $ds) {
-                    margin-left: 15px;
-                    width: 40px;
-                }
+        .btn-call {
+            margin-left: 31px;
 
-                @media (max-width: $tb) {
-                    margin-left: 0;
-                }
+            @media (max-width: $ds) {
+                margin-left: 15px;
+                width: 40px;
+            }
+
+            @media (max-width: $tb) {
+                margin-left: 0;
             }
         }
 
