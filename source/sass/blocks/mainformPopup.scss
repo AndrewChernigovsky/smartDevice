@@ -12,11 +12,11 @@
 
     &::-webkit-scrollbar{
         width: 2px;
-        background: #eee;
+        background: $basicBlue;
     }
     &::-webkit-scrollbar-thumb{
         width: 2px;
-        background: #ccc;
+        background: $basicBlueSky;
     }
 
     .main-form__form {
@@ -153,20 +153,37 @@
 }
 
 .mainformPopup-js {
-    display: block;
+    @media (min-width: 1440px) {
+        display: block;
+    }
 }
 
 .overflow {
-    background-color: $blackLight;
-    width: 100vw;
-    height: 100vh;
-    z-index: 99;
-    position: absolute;
+    @media (min-width: 1440px) {
+        background-color: $blackLight;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        position: absolute;
+    }
 }
 
 .scroll-form {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    @media (min-width: 1440px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;    
+    }
+}
+
+form[name='form'],
+form[name='formPopup'] {
+    input.error {
+        border: 1px solid $red;
+      }
+    
+    input.success {
+        border: 1px solid $basicGreen;
+      }
 }

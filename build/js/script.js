@@ -1,7 +1,4 @@
 'use strict';
-
-const { children } = require("cheerio/lib/api/traversing");
-
 const footerNav = document.querySelector('.footer__nav')
 const footerContacts = document.querySelector('.footer__contacts')
 const btnContactsFooter = document.getElementById('footerBtnContacts');
@@ -49,6 +46,8 @@ const popupform = document.querySelector('.mainformPopup');
 const popupformbtn = document.querySelector('.btnPop');
 const body = document.querySelector('.page__body');
 const formPopup = document.querySelector('.main-formPopup');
+const formPopupName = document.getElementById('popname');
+const formPopupPhone = document.getElementById('popphone');
 
 btnPopup.addEventListener('click', ()=> {
     overflow.classList.add('overflow')
@@ -58,10 +57,6 @@ btnPopup.addEventListener('click', ()=> {
     formPopup.classList.add('scroll-form')
     popupName.focus()
 })
-
-popupform.addEventListener('blur', ()=> {
-    popupName.focus()
-});
 
 overflow.addEventListener('click', ()=> {
     popupform.classList.remove('mainformPopup-js');
@@ -87,16 +82,50 @@ popupformbtn.addEventListener('click', ()=> {
 })
 
 // if(navMain.classList.contains(mainNavOpened)) {
-// body.classList.add('overflow-hidden')
-// navList.style.overflowY='scroll';
-// } else {
-// body.classList.remove('overflow-hidden')
-// }
 
-// if(navMain.classList.contains('none')) {
-// body.classList.remove('overflow-hidden')
-// navList.style.overflowY='hidden';
-// }
+formPopupName .removeAttribute('required')
+formPopupPhone.removeAttribute('required')
+
+popupform.addEventListener('submit', function (evt) {
+
+
+  if (isValidName(formPopupName )) {
+    formPopupName .classList.add('error')
+    evt.preventDefault();
+  } else {
+    formPopupName.classList.remove('error')
+    formPopupName.classList.add('success')
+    localStorage.setItem('username', formPopupName.value);
+  }
+
+  if (isValidPhone(formPopupPhone)) {
+    formPopupPhone.classList.add('error')
+    evt.preventDefault();
+  } else {
+    formPopupPhone.classList.remove('error')
+    formPopupPhone.classList.add('success')
+    localStorage.setItem('phone', formPopupPhone.value);
+  }
+
+  if(formPopupPhone.classList.contains('success') && formPopupName.classList.contains('success')) {
+    alert('Форма успешно отправлена')
+  }
+});
+
+function isValidPhone(input) {
+  return !/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test(
+    input.value
+  );
+}
+
+function isValidName(input) {
+  return !/^\D{1,3}[А-Яа-яA-Za-z0-9_-]{3,30}$/.test(input.value);
+}
+
+formPopupPhone.oninput = function () {
+  var rep = /[a-zA-ZА-Яа-я]/g;
+  this.value = this.value.replace(rep, "")
+};
 
 
 // anchors
