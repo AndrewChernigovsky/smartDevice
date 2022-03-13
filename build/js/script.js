@@ -44,38 +44,53 @@ const overflow = document.getElementById('overflow');
 const popupshow = document.querySelector('.mainformPopup-js');
 const popupform = document.querySelector('.mainformPopup');
 const popupformbtn = document.querySelector('.btnPop');
-const body = document.getElementsByTagName('body')[0];
+const body = document.querySelector('.page__body');
+const formPopup = document.querySelector('.main-formPopup');
 
 btnPopup.addEventListener('click', ()=> {
     overflow.classList.add('overflow')
-    popupform.classList.add('mainformPopup-js');
+    popupform.classList.add('mainformPopup-js')
+    body.style.overflowY = 'hidden'
+    popupform.style.overflowY = 'scroll'
+    formPopup.classList.add('scroll-form')
 })
 
 overflow.addEventListener('click', ()=> {
     popupform.classList.remove('mainformPopup-js');
     overflow.classList.remove('overflow')
+    body.style.overflowY = 'scroll'
+    popupform.style.overflowY = 'hidden';
 })
 
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         popupform.classList.remove('mainformPopup-js')
         overflow.classList.remove('overflow')
+        body.style.overflowY = 'scroll'
+        popupform.style.overflowY = 'hidden';
     }
 })
 
 popupformbtn.addEventListener('click', ()=> {
     popupform.classList.remove('mainformPopup-js')
     overflow.classList.remove('overflow')
+    body.style.overflowY = 'scroll'
+    popupform.style.overflowY = 'hidden';
 })
 
-if(popupform.classList.contains('mainformPopup-js')) {
+// if(navMain.classList.contains(mainNavOpened)) {
+// body.classList.add('overflow-hidden')
+// navList.style.overflowY='scroll';
+// } else {
+// body.classList.remove('overflow-hidden')
+// }
 
-    body.classList.add('overflow-hidden')
-    popupform.style.overflowY='scroll';
-} else {
-        body.classList.remove('overflow-hidden')
-        popupform.style.overflowY='hidden';
-    }
+// if(navMain.classList.contains('none')) {
+// body.classList.remove('overflow-hidden')
+// navList.style.overflowY='hidden';
+// }
+
+
 // anchors
 
 const anchors = document.querySelectorAll('a[href*="#"]')
