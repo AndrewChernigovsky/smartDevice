@@ -41,11 +41,22 @@ btnContactsFooter.addEventListener('click', ()=> {
 // Form Popup
 const btnPopup = document.getElementById('callUs');
 const overflow = document.getElementById('overflow');
-const popupshow = document.querySelector('.mainformPopup-js');
+const popupName = document.getElementById('popname');
 const popupform = document.querySelector('.mainformPopup');
 const popupformbtn = document.querySelector('.btnPop');
 const body = document.querySelector('.page__body');
 const formPopup = document.querySelector('.main-formPopup');
+
+
+var lastFocusedElement;
+function showModal() {
+  lastFocusedElement = document.activeElement;
+  popupform.focus();
+}
+
+function removeModal() {
+    lastFocusedElement.focus();
+}
 
 btnPopup.addEventListener('click', ()=> {
     overflow.classList.add('overflow')
@@ -53,6 +64,7 @@ btnPopup.addEventListener('click', ()=> {
     body.style.overflowY = 'hidden'
     popupform.style.overflowY = 'scroll'
     formPopup.classList.add('scroll-form')
+    popupName.focus()
 })
 
 overflow.addEventListener('click', ()=> {

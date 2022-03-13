@@ -1,4 +1,7 @@
 'use strict';
+
+const { children } = require("cheerio/lib/api/traversing");
+
 const footerNav = document.querySelector('.footer__nav')
 const footerContacts = document.querySelector('.footer__contacts')
 const btnContactsFooter = document.getElementById('footerBtnContacts');
@@ -41,7 +44,7 @@ btnContactsFooter.addEventListener('click', ()=> {
 // Form Popup
 const btnPopup = document.getElementById('callUs');
 const overflow = document.getElementById('overflow');
-const popupshow = document.querySelector('.mainformPopup-js');
+const popupName = document.getElementById('popname');
 const popupform = document.querySelector('.mainformPopup');
 const popupformbtn = document.querySelector('.btnPop');
 const body = document.querySelector('.page__body');
@@ -53,7 +56,12 @@ btnPopup.addEventListener('click', ()=> {
     body.style.overflowY = 'hidden'
     popupform.style.overflowY = 'scroll'
     formPopup.classList.add('scroll-form')
+    popupName.focus()
 })
+
+popupform.addEventListener('blur', ()=> {
+    popupName.focus()
+});
 
 overflow.addEventListener('click', ()=> {
     popupform.classList.remove('mainformPopup-js');
