@@ -6,7 +6,7 @@
     z-index: 100;
     margin-left: 0;
     z-index: 100;
-    min-width: 26%;
+    min-width: 490px;
     min-height: 625px;
     scrollbar-width: thin;
 
@@ -152,14 +152,18 @@
     }
 }
 
+.main-formPopup {
+    max-width: 490px;
+}
+
 .mainformPopup-js {
-    @media (min-width: 1440px) {
+    @media (min-width: 1170px) {
         display: block;
     }
 }
 
 .overflow {
-    @media (min-width: 1440px) {
+    @media (min-width: 1170px) {
         background-color: $blackLight;
         width: 100vw;
         height: 100vh;
@@ -169,11 +173,11 @@
 }
 
 .scroll-form {
-    @media (min-width: 1440px) {
+    @media (min-width: 1170px) {
         position: fixed;
         top: 0;
         left: 0;
-        bottom: 0;    
+        bottom: 0;
     }
 }
 
@@ -182,7 +186,7 @@ form[name='formPopup'] {
     input.error {
         border: 1px solid $red;
       }
-    
+
     input.success {
         border: 1px solid $basicGreen;
       }
