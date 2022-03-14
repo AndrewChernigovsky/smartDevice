@@ -103,6 +103,7 @@
         &:last-child {
             @media (max-width: $tb) {
                 min-height: 251px;
+                padding-right: 18px;
             }
 
             p {
@@ -247,7 +248,11 @@
             padding-right: 27px;
 
             @media (max-width: $ds) {
-                padding-right: 0;
+                padding-right: 10px;
+            }
+
+            @media (max-width: $tb) {
+                padding-right: 5px;
             }
 
             &:first-of-type {
