@@ -2,19 +2,19 @@
     display: none;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,50%);
+    transform: translate(-50%, 50%);
     z-index: 100;
     margin-left: 0;
     z-index: 100;
     min-width: 490px;
-    min-height: 625px;
+    min-height: 605px;
     scrollbar-width: thin;
 
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
         width: 2px;
         background: $basicBlue;
     }
-    &::-webkit-scrollbar-thumb{
+    &::-webkit-scrollbar-thumb {
         width: 2px;
         background: $basicBlueSky;
     }
@@ -57,7 +57,7 @@
             }
 
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 23px;
                 height: 1px;
@@ -68,7 +68,7 @@
             }
 
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 23px;
                 height: 1px;
@@ -114,8 +114,6 @@
 
         label {
             margin-left: 48px;
-
-
         }
 
         input:checked + label,
@@ -181,13 +179,13 @@
     }
 }
 
-form[name='form'],
-form[name='formPopup'] {
+form[name="form"],
+form[name="formPopup"] {
     input.error {
         border: 1px solid $red;
-      }
+    }
 
     input.success {
         border: 1px solid $basicGreen;
-      }
+    }
 }

@@ -1,7 +1,7 @@
 @font-face {
     font-family: "PT Mono";
-    src: url("../fonts/PTMono-Regular.woff") format("woff"),
-        url("../fonts/PTMono-Regular.woff2") format("woff2"),
+    src: url("../fonts/PTMono-Regular.wof2") format("wof2"),
+        url("../fonts/PTMono-Regular.woff") format("woff"),
         url("../fonts/PTMono-Regular.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("../fonts/Roboto-Medium.woff") format("woff"),
-        url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+        url("../fonts/Roboto-Medium.woff") format("woff"),
         url("../fonts/Roboto-Medium.ttf") format("truetype");
     font-weight: 500;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: "RobotoCondensed";
-    src: url("../fonts/RobotoCondensed-Bold.woff") format("woff"),
-        url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+        url("../fonts/RobotoCondensed-Bold.woff") format("woff"),
         url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
     font-weight: 700;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: "RobotoCondensed";
-    src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
-        url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+        url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
         url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;

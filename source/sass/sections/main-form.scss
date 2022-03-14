@@ -5,10 +5,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    h2 {
+    span:first-of-type {
         margin-top: 63px;
     }
-
 
     &__wrapper {
         padding-top: 32px;
@@ -181,12 +180,12 @@
         }
 
         &::before {
-            content: '';
+            content: "";
             display: block;
             position: absolute;
             width: 730px;
             height: 638px;
-            background-image: url('../img/content/airplane-bg.png');
+            background-image: url("../img/content/airplane-bg.png");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -293,7 +292,7 @@
         width: 16px;
         height: 16px;
         top: 2px;
-        left: -30px;;
+        left: -30px;
         border: 1px solid $white;
         background: transparent;
         cursor: pointer;

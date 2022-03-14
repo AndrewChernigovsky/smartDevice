@@ -322,7 +322,7 @@
         @media (max-width: $tb) {
             display: grid;
             justify-content: center;
-            gap: 31px ;
+            gap: 31px;
             text-align: center;
             margin-top: 11px;
         }
@@ -399,7 +399,6 @@
         }
 
         .footer__title button {
-
             &::before {
                 transform: rotate(0deg);
             }
@@ -426,7 +425,6 @@
         }
 
         .footer__title button {
-
             &::before {
                 transform: rotate(0deg);
             }
@@ -461,7 +459,6 @@
 .footer__contacts--closed {
     @media (max-width: $tb) {
         .footer__title button {
-
             &::before {
                 transform: rotate(0deg);
             }
@@ -471,9 +468,9 @@
             }
         }
 
-       .footer__contacts-wrapper {
-           display: none;
-       }
+        .footer__contacts-wrapper {
+            display: none;
+        }
     }
 }
 
@@ -501,7 +498,6 @@
         }
 
         .footer__title button {
-
             &::before {
                 transform: rotate(0deg);
             }
