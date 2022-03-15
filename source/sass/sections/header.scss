@@ -1,7 +1,7 @@
 .header {
     background-color: $basicGray2;
     min-height: 478px;
-    background-image: url("../../img/content/main-bg.jpg");
+    background-image: image-set('../img/content/main-bg.jpg' 1x, '../img/content/main-bg@2x.jpg' 2x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,11 +10,13 @@
 
     @media (max-width: $ds) {
         padding-bottom: 181px;
+        background-image: image-set('../img/content/main-bg-tb.jpg' 1x, '../img/content/main-bg-tb@2x.jpg' 2x);
     }
 
     @media (max-width: $tb) {
         padding-bottom: 120px;
         margin-bottom: 33px;
+        background-image: image-set('../img/content/main-bg-mb.jpg' 1x, '../img/content/main-bg-mb@2x.jpg' 2x);
     }
 
     .logo {
@@ -273,17 +275,17 @@
             }
 
             @media (max-width: $ds) {
-                width: 465px;
-                height: 336px;
-                margin-left: 100px;
-                margin-top: 80px;
+                width: 262px;
+                height: 339px;
+                margin-left: 97px;
+                margin-top: 81px;
             }
 
             @media (max-width: $tb) {
-                width: 302px;
+                width: 297px;
                 height: 219px;
-                margin-left: 25px;
-                margin-top: 61px;
+                margin-left: 23px;
+               margin-top: 61px;
             }
         }
     }
