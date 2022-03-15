@@ -1,6 +1,6 @@
 .main-form {
     background-color: $basicBlue;
-    background-image: url("../img/content/form-bg.png");
+    background-image: image-set('../img/content/form-bg.png' 1x, '../img/content/form-bg@2x.png' 2x);
     background-position: 100% 39px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@
             position: absolute;
             width: 730px;
             height: 638px;
-            background-image: url("../img/content/airplane-bg.png");
+            background-image: image-set('../img/content/airplane-bg.png' 1x, '../img/content/airplane-bg@2x.png' 2x);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;

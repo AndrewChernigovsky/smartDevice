@@ -110,15 +110,36 @@
 
             <div class="header__main-imageWrapper">
                 <div class="header__main-image">
-                    <!-- 1х: 705px; 2x: 1410px -->
-                    <img src="img/content/header-cards1.png" srcset="img/content/header-cards1@2x.png 2x"
-                        alt="Технологические изобретения" width="705" height="515" />
+
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1024px)" srcset="
+                              img/content/header-cards1.webp    1x,
+                              img/content/header-cards1@2x.webp 2x
+                            " />
+                        <source type="image/webp" media="(min-width: 768px)" srcset="
+                        img/content/header-cards1-tb.webp    1x,
+                        img/content/header-cards1-tb@2x.webp 2x
+                        " />
+                        <source type="image/webp" media="(min-width: 320px)" srcset="
+                              img/content/header-cards1-mb.webp    1x,
+                              img/content/header-cards1-mb@2x.webp 2x
+                            " />
+                        <!-- 1х: 705px; 2x: 1410px -->
+                        <img src="img/content/header-cards1.png" srcset="img/content/header-cards1@2x.png 2x" alt="платы для компьютеров" loading="lazy"
+                        width="705" height="515" />
+                      </picture>
+
                 </div>
                 <div class="header__main-imageBg">
-                    <!-- 1х: 705px; 2x: 1410px -->
-                    <img src="img/content/header-cards1-bg.png"
-                    srcset="img/content/header-cards1-bg@2x.png 2x" alt="Технологические изобретения" width="705"
-                    height="515">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 320px)" srcset="
+                              img/content/header-cards1-bg.webp    1x,
+                              img/content/header-cards1-bg@2x.webp 2x
+                            " />
+                        <!-- 1х: 705px; 2x: 1410px -->
+                        <img src="img/content/header-cards1-bg.png" srcset="img/content/header-cards1-bg@2x.png 2x" alt="платы для компьютеров" loading="lazy"
+                        width="705" height="515" />
+                    </picture>
                 </div>
             </div>
         </div>
@@ -170,9 +191,16 @@
             </div>
             <div class="about-company__info">
                 <div class="about-company__image-info">
-                    <!-- 1х: 317px; 2x: 634px -->
-                    <img src="img/content/2005year.png" srcset="img/content/2005year@2x.png 2x" alt="2005 year"
+                    <picture>
+                        <source type="image/webp" media="(min-width: 320px)" srcset="
+                              img/content/2005year.webp    1x,
+                              img/content/2005year@2x.webp 2x
+                            " />
+                         <!-- 1х: 317px; 2x: 634px -->
+                        <img src="img/content/2005year.png" srcset="img/content/2005year@2x.png 2x" alt="2005 year"
                         width="317" height="220">
+                    </picture>
+
                 </div>
                 <div class="about-company__info-text">
                     <h3>О компании</h3>
@@ -212,9 +240,16 @@
         <section class="main-form" id="mainForm">
             <div class="main-form__wrapper containerMedium">
                 <div class="main-form__image-wrapper">
-                    <!-- 1х: 511px; 2x: 1022px -->
-                    <img src="img/content/airplane.png" srcset="img/content/airplane@2x.png 2x"
-                        alt="Технологические изобретения" width="511" height="288" />
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1170px)" srcset="
+                              img/content/airplane.webp    1x,
+                              img/content/airplane@2x.webp 2x
+                            " />
+                         <!-- 1х: 511px; 2x: 1022px -->
+                        <img src="img/content/airplane.png" srcset="img/content/airplane@2x.png 2x"
+                        alt="аэроплан" width="511" height="288" />
+                    </picture>
+
                 </div>
                 <div class="main-form__form">
                     <h2>Остались вопросы? Задайте их нам!</h2>
