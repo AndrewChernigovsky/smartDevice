@@ -197,7 +197,7 @@
             margin-left: 6px;
         }
 
-        a {
+        div {
             background-color: $white;
             transition: 0.3s ease-in-out;
             padding: 14px 53px;
@@ -209,12 +209,12 @@
             font-family: "RobotoCondensed";
             text-transform: uppercase;
             text-decoration: none;
-            cursor: pointer;
+            transition: 0.3s ease;
 
             &:hover {
                 color: $white;
                 background-color: $basicBlue;
-                transition: 0.3s ease-in-out;
+                transition: 0.3s ease;
             }
         }
 
