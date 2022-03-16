@@ -1,6 +1,6 @@
 .header {
     background-color: $basicGray2;
-    min-height: 478px;
+    min-height: 878px;
     background-image: image-set('../img/content/main-bg.jpg' 1x, '../img/content/main-bg@2x.jpg' 2x);
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,17 +51,24 @@
             margin-top: -24px;
         }
 
+        @media (max-width: $tb) {
+            min-width: 86px;
+            margin-top: -45px;
+        }
+
+        .main-form {
+            @media (max-width: $ds) {
+                display: none;
+            }
+        }
+
         .btn-call {
-            margin-left: 24px;
+            margin-left: 25px;
             margin-top: -18px;
+            display: block;
 
             @media (max-width: $ds) {
-                margin-left: 15px;
-                width: 40px;
-            }
-
-            @media (max-width: $tb) {
-                margin-left: 0;
+                display: none;
             }
         }
 
@@ -70,10 +77,6 @@
             margin-right: 5px;
             letter-spacing: 0.7px;
             min-width: 181px;
-
-            @media (max-width: $ds) {
-                display: none;
-            }
         }
     }
 
@@ -92,6 +95,10 @@
             @media (max-width: $tb) {
                 max-width: 340px;
             }
+
+            span {
+                min-width: 100%;
+            }
         }
 
         .btn-call a {
@@ -101,7 +108,7 @@
             margin-left: 4rem;
             border: 1px solid transparent;
             margin-left: 97px;
-            padding: 16px 44px;
+            padding: 16px 25px;
             letter-spacing: 0.8px;
             border-radius: 5px;
             text-decoration: none;
@@ -110,6 +117,8 @@
             color: $white;
             text-transform: uppercase;
             cursor: pointer;
+            display: flex;
+            text-align: center;
 
             span:last-child {
                 display: none;
@@ -163,9 +172,10 @@
             text-transform: uppercase;
             font-size: 7.8rem;
             margin-top: 97px;
-            letter-spacing: 0.2px;
+            letter-spacing: 6.9px;
             margin-left: -1.5px;
             margin-bottom: 34px;
+            font-family: "RobotoCondensed";
 
             @media (max-width: $ds) {
                 font-size: 6rem;

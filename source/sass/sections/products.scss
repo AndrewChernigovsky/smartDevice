@@ -41,11 +41,14 @@
 
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(3, min-content);
         gap: 29px;
         align-items: center;
         justify-content: flex-start;
         min-width: 100%;
+
+        @media (min-width: 1240px) {
+            grid-template-columns: repeat(3, min-content);
+        }
 
         @media (max-width: $ds) {
             display: grid;
@@ -79,10 +82,6 @@
             background-size: cover;
         }
 
-        @media (max-width: $tb) {
-            height: 256px;
-        }
-
         &:hover {
             outline: 1px solid $basicBlue;
         }
@@ -96,8 +95,8 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 8px;
-            bottom: 1px;
-            right: 1px;
+            bottom: 3px;
+            right: -4px;
             width: 63px;
             height: 63px;
             z-index: 2;
@@ -174,7 +173,7 @@
 .block-1,
 .block-2,
 .block-3 {
-    background-size: auto;
+    background-size: cover;
 
     @media (max-width: $ds) {
         background-size: cover;

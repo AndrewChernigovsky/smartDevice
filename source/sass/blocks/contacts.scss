@@ -4,7 +4,8 @@
     }
 
     @media (max-width: $tb) {
-        max-width: 107px;
+        min-width: 83px;
+        margin-right: -39px;
     }
 
     display: flex;
@@ -26,7 +27,7 @@
         margin-bottom: 10px;
 
         @media (max-width: $ds) {
-            width: 50px;
+            width: 15px;
         }
 
         svg {
@@ -71,9 +72,10 @@
 
         svg {
             @media (max-width: $ds) {
-                margin-top: 10px;
-                height: 30px;
-                margin-left: -3px;
+                margin-top: -3px;
+                height: 25px;
+                width: 27px;
+                margin-left: 33px;
             }
 
             @media (max-width: $tb) {
@@ -94,6 +96,10 @@
 .phone {
     margin-left: 36px;
 
+    @media (max-width: $tb) {
+        margin-left: 0;
+    }
+
     &__image-wrapper {
         margin-right: 5px;
 
@@ -101,7 +107,8 @@
             @media (max-width: $ds) {
                 width: 35px;
                 height: 35px;
-                margin-left: 14px;
+                margin-left: 12px;
+                margin-top: -7px;
             }
 
             @media (max-width: $tb) {

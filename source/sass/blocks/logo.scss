@@ -23,13 +23,14 @@
         height: 52px;
         display: block;
 
-        @media (max-width: $ds) {
+        @media (max-width: $tb) {
             display: none;
         }
     }
 
     svg:last-child {
         display: none;
+        
         @media (max-width: $tb) {
             display: block;
             width: 38px;
