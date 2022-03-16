@@ -149,7 +149,7 @@
 
     &__info {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
 
         img {
             width: 150px;
@@ -197,7 +197,7 @@
             margin-left: 6px;
         }
 
-        div {
+        div, a {
             background-color: $white;
             transition: 0.3s ease-in-out;
             padding: 14px 53px;
@@ -218,11 +218,16 @@
             }
         }
 
+        a {
+            cursor: pointer;
+        }
+
         h3 {
+            font-family: "RobotoCondensed";
             font-size: 3.6rem;
             font-weight: 400;
             color: $basicGray;
-            letter-spacing: -2.4px;
+            letter-spacing: -1.4px;
             margin-top: 18px;
             margin-bottom: 28px;
 

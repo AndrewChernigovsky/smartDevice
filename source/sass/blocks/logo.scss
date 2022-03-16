@@ -2,6 +2,42 @@
     display: flex;
     align-items: center;
     cursor: default;
+    margin-right: 50px;
+    
+    @media (max-width: $ds) {
+        margin-top: -27px;
+        margin-left: 5px;
+    }
+
+    @media (max-width: $tb) {
+        margin-top: -45px;
+        margin-left: 7px;
+    }
+
+    svg:first-child {
+        width: 205px;
+        height: 52px;
+        display: block;
+
+        @media (max-width: $ds) {
+            display: none;
+        }
+    }
+
+    svg:last-child {
+        display: none;
+        @media (max-width: $ds) {
+            display: block;
+            width: 38px;
+            height: 38px;
+        }
+    }
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    cursor: default;
 
     @media (max-width: $ds) {
         margin-top: -27px;
@@ -13,38 +49,8 @@
         margin-left: 7px;
     }
 
-    &__text {
-        margin-left: 1.6rem;
-
-        @media (max-width: $tb) {
-            margin-left: 1.1rem;
-        }
-
-        &-title {
-            margin-bottom: -1rem;
-
-            p {
-                margin-top: 16px;
-                letter-spacing: -1.5px;
-                margin-left: 2px;
-                margin-bottom: -3px;
-
-                @media (max-width: $ds) {
-                    margin-left: 0;
-                    letter-spacing: -1.2px;
-                }
-            }
-        }
-    }
-
     svg {
-        fill: $basicBlue;
-        width: 52px;
+        width: 215px;
         height: 52px;
-
-        @media (max-width: $tb) {
-            width: 38px;
-            height: 38px;
-        }
     }
 }

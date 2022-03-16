@@ -33,6 +33,7 @@
         justify-content: space-between;
         min-height: 120px;
         margin-bottom: 100px;
+        padding-top: 60px;
 
         @media (max-width: $ds) {
             margin-bottom: 69px;
@@ -50,19 +51,6 @@
             margin-top: -24px;
         }
 
-        div:first-of-type {
-            margin-left: 63px;
-
-            @media (max-width: $ds) {
-                margin-left: 30px;
-            }
-
-            @media (max-width: $tb) {
-                margin-left: 26px;
-                margin-top: -8px;
-            }
-        }
-
         .btn-call {
             margin-left: 31px;
 
@@ -77,9 +65,10 @@
         }
 
         .btn-call button {
-            padding: 13px 28px;
+            padding: 13px 0;
             margin-right: 5px;
             letter-spacing: 0.5px;
+            min-width: 170px;
 
             @media (max-width: $ds) {
                 display: none;
