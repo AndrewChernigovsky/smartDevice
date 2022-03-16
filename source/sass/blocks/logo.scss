@@ -3,7 +3,7 @@
     align-items: center;
     cursor: default;
     margin-right: 50px;
-    
+
     @media (max-width: $ds) {
         margin-top: -27px;
         margin-left: 5px;
@@ -12,6 +12,10 @@
     @media (max-width: $tb) {
         margin-top: -45px;
         margin-left: 7px;
+    }
+
+    &__image-wrapper {
+        margin-top: -20px;
     }
 
     svg:first-child {
@@ -26,7 +30,7 @@
 
     svg:last-child {
         display: none;
-        @media (max-width: $ds) {
+        @media (max-width: $tb) {
             display: block;
             width: 38px;
             height: 38px;
