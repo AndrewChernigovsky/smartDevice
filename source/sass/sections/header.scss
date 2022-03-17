@@ -121,7 +121,12 @@
             cursor: pointer;
             display: flex;
             text-align: center;
-            width: 50.5%;
+            min-width: 280px;
+            max-width: 406px;
+
+            span:first-child {
+                display: block;
+            }
 
             span:last-child {
                 display: none;

@@ -388,7 +388,7 @@
             justify-content: center;
             gap: 31px;
             text-align: center;
-            margin-top: 11px;
+            margin-top: 7px;
         }
 
         span {
@@ -563,6 +563,11 @@
             margin-top: -19px;
             margin-left: 5px;
             line-height: 1;
+
+            @media (max-width: $tb) {
+                line-height: 1.25;
+                padding-right: 15px;
+            }
         }
 
         .footer__title button {
