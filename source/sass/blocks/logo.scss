@@ -30,7 +30,7 @@
 
     svg:last-child {
         display: none;
-        
+
         @media (max-width: $tb) {
             display: block;
             width: 38px;
@@ -57,5 +57,16 @@
     svg {
         width: 215px;
         height: 52px;
+    }
+
+    &__image-wrapper {
+        margin-top: 12px;
+        margin-left: 2px;
+        margin-bottom: 51px;
+        
+        @media (max-width: $ds) {
+            margin-top: -9px;
+            margin-left: 0px;
+        }
     }
 }

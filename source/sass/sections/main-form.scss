@@ -14,7 +14,7 @@
 
         @media (max-width: $ds) {
             justify-content: center;
-            padding-bottom: 100px;
+            padding-bottom: 102px;
         }
 
         @media (max-width: $tb) {
@@ -40,11 +40,13 @@
             color: $white;
             font-family: "RobotoCondensed";
             margin-bottom: 17px;
+            margin-left: -6px;
 
             @media (max-width: $ds) {
                 font-size: 3.2rem;
                 margin-top: 51px;
                 margin-bottom: 22px;
+                margin-left: -2px;
             }
 
             @media (max-width: $tb) {
@@ -173,6 +175,7 @@
         position: relative;
         min-width: 52%;
         display: block;
+        margin-right: 10px;
 
         @media (max-width: $ds) {
             display: none;
@@ -215,6 +218,10 @@
             background-color: $basicBlueSky;
             border: 1px solid transparent;
             padding: 16px 14px;
+
+            @media (max-width: $ds) {
+                padding: 16px 17px;
+            }
         }
     }
 
@@ -237,11 +244,19 @@
                 position: absolute;
                 width: 16px;
                 height: 16px;
-                top: 2px;
-                left: -30px;
+                top: 8px;
+                left: -33px;
                 border: 1px solid $white;
                 background: transparent;
                 cursor: pointer;
+
+                @media (max-width: $ds) {
+                    width: 14px;
+                    height: 14px;
+                    top: 3px;
+                    left: -32px;
+                }
+
             }
 
             &:checked + label:after {
@@ -250,14 +265,22 @@
                 position: absolute;
                 width: 16px;
                 height: 16px;
-                top: 2px;
-                left: -30px;
+                top: 8px;
+                left: -33px;
                 border: 1px solid $white;
                 background-image: url("../img/icons/agree-checked.svg");
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
                 cursor: pointer;
+
+
+                @media (max-width: $ds) {
+                    width: 14px;
+                    height: 14px;
+                    top: 3px;
+                    left: -32px;
+                }
             }
 
             &:focus + label::after {
@@ -266,8 +289,8 @@
                 position: absolute;
                 width: 16px;
                 height: 16px;
-                top: 2px;
-                left: -31px;
+                top: 8px;
+                left: -33px;
                 border: 1px solid $black;
             }
         }
@@ -277,9 +300,15 @@
             align-items: center;
             position: relative;
             margin-left: 68px;
-            letter-spacing: -0.9px;
+            letter-spacing: -1.2px;
             padding-right: 9px;
             cursor: pointer;
+            padding-top: 6px;
+
+            @media (max-width: $ds) {
+                margin-left: 71px;
+                padding-top: 0;
+            }
 
             @media (max-width: $tb) {
                 margin-left: 30px;
@@ -296,11 +325,18 @@
         position: absolute;
         width: 16px;
         height: 16px;
-        top: 2px;
-        left: -30px;
+        top: 8px;
+        left: -33px;
         border: 1px solid $white;
         background: transparent;
         cursor: pointer;
+
+        @media (max-width: $ds) {
+            width: 14px;
+            height: 14px;
+            top: 3px;
+            left: -32px;
+        }
     }
 }
 
@@ -311,13 +347,20 @@
         position: absolute;
         width: 16px;
         height: 16px;
-        top: 2px;
-        left: -32px;
+        top: 8px;
+        left: -33px;
         border: 1px solid $white;
         background-image: url("../img/icons/agree-checked.svg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
+
+        @media (max-width: $ds) {
+            width: 14px;
+            height: 14px;
+            top: 3px;
+            left: -32px;
+        }
     }
 }
