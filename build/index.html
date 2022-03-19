@@ -62,19 +62,19 @@
                                 <div class="main-form__form">
                                     <span>Закажите звонок</span>
                                     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-                                    <button type="button" class="btnPop">
+                                    <button type="button" class="btnPop" tabindex="1">
                                         <span>Закрыть форму</span>
                                     </button>
                                     <form action="https://echo.htmlacademy.ru/" name="formPopup" id="formPopup">
                                         <div class="main-form__name-wrapper">
-                                            <input type="text" id="popname" placeholder="Имя" name="name" aria-label="ваше имя" required="">
-                                            <input type="tel" id="popphone" placeholder="Телефон" name="phone" aria-label="ваш телефон" required="">
+                                            <input type="text" id="popname" placeholder="Имя" name="name" aria-label="ваше имя" required="" tabindex="2">
+                                            <input type="tel" id="popphone" placeholder="Телефон" name="phone" aria-label="ваш телефон" required="" tabindex="3">
                                         </div>
-                                        <textarea name="faq" id="popfaq" cols="30" rows="7" maxlength="200" minlength="30" placeholder="Ваш вопрос" aria-label="ваш вопрос"></textarea>
+                                        <textarea name="faq" id="popfaq" cols="30" rows="7" maxlength="200" minlength="30" placeholder="Ваш вопрос" aria-label="ваш вопрос" tabindex="4"></textarea>
 
                                         <div class="main-form__accept-wrapper">
-                                            <button type="submit" aria-label="Задать вопрос">Отправить</button>
-                                            <input class="visually-hidden" type="checkbox" name="popagree" id="popagree" aria-label="согласен на обработку персональных данных" checked="" required="">
+                                            <button type="submit" aria-label="Задать вопрос" tabindex="5">Отправить</button>
+                                            <input class="visually-hidden" type="checkbox" name="popagree" id="popagree" aria-label="согласен на обработку персональных данных" checked="" required="" tabindex="6">
                                             <label for="popagree">
                                                 <span>Я согласен на обработку персональных данных</span>
                                             </label>

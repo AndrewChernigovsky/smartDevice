@@ -83,11 +83,16 @@ const formPopup = document.querySelector(".main-formPopup");
 const formPopupName = document.getElementById("popname");
 const formPopupPhone = document.getElementById("popphone");
 const formPopupFaq = document.getElementById("popfaq");
+const formPopupAgree = document.getElementById("popAgree");
 
 const form = document.getElementById("form");
 const formName = document.getElementById("name");
 const formPhone = document.getElementById("phone");
 const formFaq = document.getElementById("faq");
+
+if(popupformbtn.focus() || formPopupAgree.focus()) {
+    if
+}
 
 btnPopup.addEventListener("click", () => {
     overflow.classList.add("overflow");
@@ -113,6 +118,11 @@ document.addEventListener("keydown", function (e) {
         popupform.style.overflowY = "hidden";
     }
 });
+
+if(formPopup.classList.contains('mainformPopup-js')) {
+    body.blur()
+}
+
 
 popupformbtn.addEventListener("click", () => {
     popupform.classList.remove("mainformPopup-js");
@@ -163,10 +173,6 @@ popupform.addEventListener("submit", function (evt) {
         alert("Форма успешно отправлена");
     }
 });
-
-if(popupform.focus()){
-    body.blur()
-}
 
 form.addEventListener("submit", function (evt) {
     if (isValidName(formName)) {
@@ -258,10 +264,6 @@ window.addEventListener("DOMContentLoaded", function () {
     formPhone.addEventListener("focus", mask, false);
     formPhone.addEventListener("blur", mask, false);
 });
-
-if(popupform.classList.contains("mainformPopup-js") {
-
-}
 
 // anchors
 
