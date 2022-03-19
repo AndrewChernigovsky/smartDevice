@@ -121,8 +121,6 @@ popupformbtn.addEventListener("click", () => {
     popupform.style.overflowY = "hidden";
 });
 
-// if(navMain.classList.contains(mainNavOpened)) {
-
 formPopupName.removeAttribute("required");
 formPopupPhone.removeAttribute("required");
 formName.removeAttribute("required");
@@ -165,6 +163,10 @@ popupform.addEventListener("submit", function (evt) {
         alert("Форма успешно отправлена");
     }
 });
+
+if(popupform.focus()){
+    body.blur()
+}
 
 form.addEventListener("submit", function (evt) {
     if (isValidName(formName)) {
@@ -256,6 +258,10 @@ window.addEventListener("DOMContentLoaded", function () {
     formPhone.addEventListener("focus", mask, false);
     formPhone.addEventListener("blur", mask, false);
 });
+
+if(popupform.classList.contains("mainformPopup-js") {
+
+}
 
 // anchors
 

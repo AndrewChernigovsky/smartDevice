@@ -47,6 +47,8 @@
         align-items: center;
         min-width: 668px;
         justify-content: flex-start;
+        position: relative;
+        z-index: 2;
 
         @media (max-width: $ds) {
             min-width: 86px;
@@ -256,7 +258,7 @@
 
     &__main-image {
         position: absolute;
-
+        z-index: 1;
 
         @media (min-width: 1760px) {
             width: max-content;
