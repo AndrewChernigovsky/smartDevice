@@ -177,6 +177,11 @@
         display: block;
         margin-right: 10px;
 
+        img {
+            z-index: 3;
+            position: relative;
+        }
+
         @media (max-width: $ds) {
             display: none;
 

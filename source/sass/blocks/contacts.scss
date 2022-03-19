@@ -65,6 +65,12 @@
 
     @media (max-width: $ds) {
         width: 50px;
+        margin-left: 33px;
+        margin-top: -3px;
+    }
+
+    @media (max-width: $tb) {
+        margin-left: 5px;
     }
 
     &__image-wrapper {
@@ -72,14 +78,8 @@
 
         svg {
             @media (max-width: $ds) {
-                margin-top: -3px;
                 height: 25px;
                 width: 27px;
-                margin-left: 33px;
-            }
-
-            @media (max-width: $tb) {
-                margin-left: 5px;
             }
         }
     }
@@ -96,8 +96,13 @@
 .phone {
     margin-left: 36px;
 
+    @media (max-width: $ds) {
+        margin-left: 12px;
+        margin-top: -7px;
+    }
+
     @media (max-width: $tb) {
-        margin-left: 0;
+        margin-left: 9px;
     }
 
     &__image-wrapper {
@@ -107,12 +112,6 @@
             @media (max-width: $ds) {
                 width: 35px;
                 height: 35px;
-                margin-left: 12px;
-                margin-top: -7px;
-            }
-
-            @media (max-width: $tb) {
-                margin-left: 9px;
             }
         }
     }
