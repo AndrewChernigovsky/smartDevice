@@ -1,14 +1,14 @@
 .mainformPopup {
     display: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 11%);
     z-index: 100;
+    position: fixed;
     margin-left: 0;
-    z-index: 100;
-    min-width: 490px;
-    min-height: 605px;
-    scrollbar-width: thin;
+    left: 0;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    scrollbar-width: 2px;
 
     &::-webkit-scrollbar {
         width: 2px;
@@ -25,7 +25,8 @@
         padding-top: 34px;
         padding-bottom: 35px;
         position: relative;
-        margin-top: 0;
+        min-width: 480px;
+        min-height: 605px;
 
         span {
             margin-top: 0;
@@ -161,8 +162,11 @@
     }
 }
 
+
+
 .main-formPopup {
     max-width: 490px;
+    min-height: 605px;
 }
 
 .mainformPopup-js {
@@ -183,10 +187,13 @@
 
 .scroll-form {
     @media (min-width: $ds) {
-        position: fixed;
-        top: 0;
-        left: 0;
+        top: 120px;
+        position: absolute;
         bottom: 0;
+        height: 100vh;
+        width: 100vw;
+        left: 50%;
+        transform: translate(-50%, 10px);
     }
 }
 

@@ -83,18 +83,14 @@ const formPopup = document.querySelector(".main-formPopup");
 const formPopupName = document.getElementById("popname");
 const formPopupPhone = document.getElementById("popphone");
 const formPopupFaq = document.getElementById("popfaq");
-const formPopupAgree = document.getElementById("popAgree");
+const formPopupAgree = document.getElementById("popagree");
 
 const form = document.getElementById("form");
 const formName = document.getElementById("name");
 const formPhone = document.getElementById("phone");
 const formFaq = document.getElementById("faq");
 
-if(popupformbtn.focus() || formPopupAgree.focus()) {
-    if
-}
-
-btnPopup.addEventListener("click", () => {
+btnPopup.addEventListener("click", (e) => {
     overflow.classList.add("overflow");
     popupform.classList.add("mainformPopup-js");
     body.style.overflowY = "hidden";
@@ -102,6 +98,10 @@ btnPopup.addEventListener("click", () => {
     formPopup.classList.add("scroll-form");
     popupName.focus();
 });
+
+formPopupAgree.addEventListener("blur", ()=> {
+    popupformbtn.focus()
+})
 
 overflow.addEventListener("click", () => {
     popupform.classList.remove("mainformPopup-js");
@@ -117,12 +117,13 @@ document.addEventListener("keydown", function (e) {
         body.style.overflowY = "scroll";
         popupform.style.overflowY = "hidden";
     }
+
+    if(e.key === "Tab") {
+        if(e.shiftKey) {
+            popupName.focus()
+        }
+    }
 });
-
-if(formPopup.classList.contains('mainformPopup-js')) {
-    body.blur()
-}
-
 
 popupformbtn.addEventListener("click", () => {
     popupform.classList.remove("mainformPopup-js");
