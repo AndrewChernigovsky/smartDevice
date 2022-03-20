@@ -5,13 +5,13 @@
     margin-right: 50px;
 
     @media (max-width: $ds) {
-        margin-top: -27px;
         margin-left: 5px;
+        margin-right: 64%;
     }
 
     @media (max-width: $tb) {
-        margin-top: -45px;
         margin-left: 7px;
+        margin-right: 68%;
     }
 
     &__image-wrapper {

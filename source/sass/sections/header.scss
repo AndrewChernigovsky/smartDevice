@@ -31,14 +31,15 @@
 
     &__wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         min-height: 120px;
         margin-bottom: 100px;
-        padding-top: 17px;
+        padding-top: 52px;
 
         @media (max-width: $ds) {
             margin-bottom: 69px;
+            padding-top: 41px;
         }
     }
 
@@ -50,15 +51,41 @@
         position: relative;
         z-index: 2;
 
+        @media (min-width: $ds) {
+            margin-right: -20%;
+        }
+
+
+        @media (min-width: 1140px) {
+            margin-top: -4px;
+            margin-right: -35%;
+        }
+
+        @media (min-width: 1500px) {
+            margin-right: -52%;
+        }
+
+
+        @media (min-width: 1710px) {
+            margin-right: -54.5%;
+        }
+
+
+
+
         @media (max-width: $ds) {
             min-width: 86px;
-            margin-top: -24px;
+            margin-right: 0;
         }
 
         @media (max-width: $tb) {
-            min-width: 86px;
-            margin-top: -45px;
+            min-width: 54px;
+            margin-top: -16px;
         }
+    }
+
+    &__formCall {
+        margin-top: -13px;
 
         .main-form {
             @media (max-width: $ds) {
@@ -68,8 +95,9 @@
 
         .btn-call {
             margin-left: 25px;
-            margin-top: -18px;
+            margin-top: -11px;
             display: block;
+            min-width: 172px;
 
             @media (max-width: $ds) {
                 display: none;
@@ -77,9 +105,10 @@
         }
 
         .btn-call button {
-            padding: 13px 0;
-            margin-right: 5px;
-            letter-spacing: 0.7px;
+            padding: 14px 28px;
+            margin-left: -6px;
+            margin-top: 8px;
+            letter-spacing: 0.9px;
             min-width: 181px;
         }
     }

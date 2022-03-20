@@ -1,18 +1,22 @@
 .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+    font-family: "PT Mono";
+    max-width: inherit;
+    margin-left: -34px;
+
     @media (max-width: $ds) {
-        max-width: 160px;
+        max-width: inherit;
+        grid-template-columns: min-content min-content;
+        gap: 20px;
     }
 
     @media (max-width: $tb) {
         min-width: 83px;
-        margin-right: -39px;
+        gap: 0;
+        row-gap: 5px;
     }
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-family: "PT Mono";
-    flex-wrap: wrap;
 
     a {
         color: $white;
@@ -53,20 +57,9 @@
             opacity: 0.8;
         }
     }
-
-    .phone {
-        margin-right: 5px;
-    }
 }
 
 .email {
-    margin-right: -6px;
-
-    @media (max-width: $ds) {
-        width: 50px;
-        margin-left: 33px;
-        margin-top: -3px;
-    }
 
     @media (max-width: $tb) {
         margin-left: 5px;
@@ -85,6 +78,7 @@
 
     p {
         margin: 0;
+        margin-left: -5px;
 
         @media (max-width: $ds) {
             display: none;
@@ -93,10 +87,8 @@
 }
 
 .phone {
-    margin-left: 36px;
 
     @media (max-width: $ds) {
-        margin-left: 12px;
         margin-top: -7px;
     }
 
@@ -117,6 +109,7 @@
 
     p {
         margin: 0;
+        margin-left: 2px;
 
         @media (max-width: $ds) {
             display: none;
