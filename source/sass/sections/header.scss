@@ -35,18 +35,19 @@
         justify-content: space-between;
         min-height: 55px;
         margin-top: 52px;
-        margin-bottom: 100px;
+        margin-bottom: 113px;
 
         @media (max-width: $ds) {
-            margin-bottom: 69px;
+            margin-bottom: 116px;
             padding-top: 41px;
+            margin-top: 0;
         }
     }
 
     &__inner {
         display: flex;
         align-items: center;
-        min-width: 668px;
+        min-width: 500px;
         justify-content: flex-start;
         position: relative;
         z-index: 2;
@@ -61,20 +62,18 @@
         }
 
         @media (min-width: 1500px) {
-            margin-right: -52%;
+            margin-right: -45%;
         }
 
 
         @media (min-width: 1710px) {
-            margin-right: -54.5%;
+            margin-right: -42.5%;
         }
 
-
-
-
         @media (max-width: $ds) {
-            min-width: 86px;
-            margin-right: 0;
+            min-width: 53px;
+            margin-right: -5px;
+            margin-top: -4px;
         }
 
         @media (max-width: $tb) {
@@ -84,6 +83,11 @@
     }
 
     &__formCall {
+        display: block;
+
+        @media (max-width: $ds) {
+            display: none;
+        }
 
         .main-form {
             @media (max-width: $ds) {
@@ -93,7 +97,7 @@
 
         .btn-call {
             margin-left: 25px;
-            margin-top: -11px;
+            margin-top: -3px;
             display: block;
             min-width: 172px;
             min-height: 50px;
@@ -108,7 +112,7 @@
         .btn-call button {
             padding: 14px 28px;
             margin-left: -6px;
-            margin-top: 8px;
+            margin-top: -14px;
             letter-spacing: 0.9px;
             min-width: 181px;
         }
@@ -313,10 +317,8 @@
             object-fit: contain;
 
             @media (min-width: 1760px) {
-                width: 705px;
-                height: 515px;
                 margin-top: 38px;
-                width: 719px;
+                width: 731px;
                 height: 515px;
                 margin-left: -19px;
             }
@@ -344,6 +346,7 @@
             z-index: 0;
             top: 2px;
             left: 2px;
+            object-fit: contain;
 
             @media (min-width: 1760px) {
                 position: absolute;

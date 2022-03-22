@@ -30,7 +30,7 @@
     }
 
     &__wrappers {
-        min-width: 76.8%;
+        min-width: 72.8%;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -220,7 +220,11 @@
     &__nav-page {
         margin-top: -19px;
         margin-left: 95px;
-        margin-right: 40px;
+        margin-right: 20px;
+
+        @media (max-width: 1170px) {
+            margin-right: 40px;
+        }
 
         @media (max-width: $ds) {
             margin-top: -6px;
