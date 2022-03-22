@@ -1,6 +1,7 @@
 .contacts {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 160px 235px;
+    gap: 10px;
     justify-content: flex-start;
     font-family: "PT Mono";
     max-width: inherit;
